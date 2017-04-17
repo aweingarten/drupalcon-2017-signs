@@ -1,0 +1,246 @@
+<html>
+<head>
+    <title>Beyond Websites: Using Drupal For Digital Signs</title>
+    <link rel="stylesheet" href="src/reveal/css/reveal.css">
+    <link rel="stylesheet" href="src/reveal/css/theme/black.css">
+    <link rel="stylesheet" href="custom.css">
+</head>
+<body>
+<div class="reveal">
+    <div class="slides">
+        <section class="present" style="top: 143.5px; display: block;">
+            <h2>Beyond Websites: Using Drupal For Digital Signs</h2>
+            <span><img  class="acquia-color-logo" alt="Acquia Logo" src="img/acquia-colors.png" width="225"></span>
+
+            <span><img  class="baltimore-logo" alt="Drupalcon Baltimore 2017" src="img/drupalcon-baltimore.svg" width="225"></span>
+        </section>
+
+        <section>
+            <section>About Us</section>
+
+            <section>
+                Adam Weingarten
+                <p class="fragment fade-right">Technical Architect, Acquia</p>
+                <p class="fragment fade-right">
+                    D.O: <a href="https://www.drupal.org/u/adamweingarten"> adam.weingarten </a> <br />
+                    github: <a href="https://github.com/aweingarten/">aweingarten</a> <br />
+                    linkedin: <a href="https://www.linkedin.com/in/adamweingarten"> adam.weingarten</a>
+                </p>
+            </section>
+
+            <section>Mike Madison
+                    <p class="fragment fade-right">Technical Architect, Acquia</p>
+                    <p class="fragment fade-right">
+                        D.O: <a href="https://www.drupal.org/u/mikemadison">mikemadison </a> <br />
+                        github: <a href="https://github.com/mikemadison13">mikemadison13</a> <br />
+                        linkedin: <a href="https://www.linkedin.com/in/mikemadison">mikemadison</a>
+                    </p>
+            </section>
+        </section>
+        <!--End Section: About Us-->
+
+
+        <section>
+            <section>
+                <h2>Why are we here?</h2>
+                <p class="fragment fade-right">Next-generation Digital experiences </p>
+                <p class="fragment fade-right">Personal Aids: Alexa, Siri, Cortana</p>
+                <p class="fragment fade-right">Car/Plane UI</p>
+                <p class="fragment fade-right">Museum Kiosk</p>
+
+            </section>
+
+            <section>
+                <h2>Why are we really here? <span class="fragment fade-right">Signs!</span></h2>
+            </section>
+
+            <section>
+                <h2>What are you going to hear about?</h2>
+                <p class="fragment fade-right">Content Management</p>
+                <p class="fragment fade-right">Working with external data</p>
+                <p class="fragment fade-right">Data Transmission</p>
+                <p class="fragment fade-right">Device Management</p>
+                <p class="fragment fade-right">Security</p>
+                <p class="fragment fade-right">Support</p>
+                <p class="fragment fade-right">Case Studies</p>
+            </section>
+
+
+            <section>
+                <h2>Why even use Drupal to power a sign? <br /> <span class="fragment fade-right">Skeptic says: There are better options!</span></h2>
+                <span class="fragment fade-right">Caution: Gratuitous opportunity to cram in buzzwords and technologies!</span>
+
+                <div class="fragment fade-right">
+                <span><img  class="acquia-color-logo" alt="HTML 5 Logo" src="img/logos/html5_logo.png" width="225"></span>
+                <span><img  class="acquia-color-logo" alt="Symfony Logo" src="img/logos/symfony_logo.png" width="300"></span>
+                <span><img  class="acquia-color-logo" alt="Node Logo" src="img/logos/node_logo.png" width="225"></span>
+                <span><img  class="acquia-color-logo" alt="Ember Logo" src="img/logos/ember_logo.png" width="225"></span>
+                <span><img  class="acquia-color-logo" alt="Angular Logo" src="img/logos/angular_logo.png" width="225"></span>
+                <span><img  class="acquia-color-logo" alt="React Logo" src="img/logos/react_logo.png" width="225"></span>
+                </div>
+
+                <p class="fragment fade-left">Great DX. Horrible UX.</p>
+            </section>
+
+            <section>
+                <h2>Drupal provides UX for managing content!</h2>
+                <p class="fragment fade-right">User generated content</p>
+                <p class="fragment fade-right">External feed content</p>
+            </section>
+        </section>
+        <!--End Section: why we are here-->
+
+        <section>
+            <section>
+                <h2>Why do we use drupal to manage content again?</h2>
+                <p class="fragment fade-right"> Content Modeling</p>
+                <p class="fragment fade-right"> Screen Controls</p>
+                <p class="fragment fade-right"> Access Controls & Permissions</p>
+                <p class="fragment fade-right"> Revisioning</p>
+                <p class="fragment fade-right"> Translations</p>
+            </section>
+
+            <section>
+                <h2>Content Model Example: <span class="fragment fade-right">DC Metro!</span></h2>
+                </h2>
+
+                <div class="wmata-left">
+                    <img  class="wmata-sign" alt="Map of WMATA Subway System" src="img/wmata_map.png" width="60%">
+                </div>
+
+                <div class="wmata-right">
+                    <p class="fragment fade-right"> <strong>Lines:</strong> Red, Blue, Yellow, Green</p>
+                    <p class="fragment fade-right"> <strong>Line Direction:</strong> Shady Grove or  Glenmont</p>
+                    <p class="fragment fade-right"> <strong>Stations:</strong> Metro Center, Smithsonian, Farragut North</p>
+                    <p class="fragment fade-right"> <strong>Platforms:</strong> 1 platform can service Mutiple lines.</p>
+                </div>
+            </section>
+        </section>
+        <!--End Section: why drupal?-->
+
+
+        <section>
+            <section>
+                <h2>Working with External Data and Feeds</h2>
+                <p class="fragment fade-right"> Drupal isn't the source of all things.</p>
+                <p class="fragment fade-right"> Gasp!</p>
+                <p class="fragment fade-right"> It can still help process outside data.</p>
+            </section>
+
+            <section>
+                <h2>What kind of "external data" from outside APIs:  </h2>
+                <p class="fragment fade-right"> Pinterest, Facebook, Twitter</p>
+                <p class="fragment fade-right"> Train Arrivals</p>
+                <p class="fragment fade-right"> Weather</p>
+                <p class="fragment fade-right"> Stock Quotes</p>
+                <p class="fragment fade-right"> Top News</p>
+            </section>
+
+            <section>
+                <h2>Just do it on the client side? <span class="fragment fade-right">Nope.</span> </h2>
+                <p class="fragment fade-right"> Api Rate Limiting </p>
+                <p class="fragment fade-right"> Security/Credentials</p>
+                <p class="fragment fade-right"> Client processing introduces inconsistencies.</p>
+            </section>
+
+            <section>
+                <h2>Why not just write a Symfony app??</h2>
+                <p class="fragment fade-right">
+                    <img class="wmata-sign" alt="Hater Gonna Hate" src="img/cranks.jpg" width="40%">
+                </p>
+            </section>
+
+            <section>
+                <h2>Context is everything</h2>
+                <p class="fragment fade-right"> Remember that drupal content model?</p>
+                <p class="fragment fade-right"> We can use it to to process that data!</p>
+            </section>
+
+            <section>
+                <h2>Back to our train example...</h2>
+                <p class="fragment fade-right"> Say we have an arrival feed.</p>
+                <p class="fragment fade-right"> Can process updates for specific signs</p>
+                <p class="fragment fade-right"> Let the signs know that something has changed.</p>
+                <p class="fragment fade-right"> Can't do that with a symfony app!</p>
+            </section>
+
+            <section>
+                <h2>How does this actually work?</h2>
+                <p class="fragment fade-right"> Start with a drush command</p>
+                <p class="fragment fade-right"> Store the credentials in Drupal</p>
+                <p class="fragment fade-right"> Sprinkle in some caching to enforce rate limits.</p>
+                <p class="fragment fade-right"> Parse and normalize data</p>
+            </section>
+
+            <section>
+                <h2>How to loop your drush command when all you have is cron?</h2>
+                <p class="fragment fade-right"> Start with a drush command</p>
+                <p class="fragment fade-right"> Store the credentials in Drupal</p>
+                <p class="fragment fade-right"> Sprinkle in some caching to enforce rate limits.</p>
+                <p class="fragment fade-right"> Parse and normalize data</p>
+            </section>
+        </section>
+        <!--End Section: consuming feeds?-->
+
+
+
+
+        </section>
+
+        <section>Questions?
+            <p class="fragment fade-right"><a href="https://events.drupal.org/baltimore2017/sessions/style-guide-driven-development-managers-why-you-should-care">Leave us some feedback!</a></p>
+
+        </section>
+
+        <section>
+            <p class="fragment fade-right">Friday sprint reminder slide</p>
+            <p class="fragment fade-right">DA asked us to include this.</p>
+        </section>
+        <section>Resources for your Devs
+        <p class="fragment fade-right">
+            <ul>
+                 <li> <a href="http://www.mediacurrent.com/blog/integrating-components-drupal-8-part-1">Integrating Components with Drupal 8 - Part 1</a></li>
+                 <li> <a href="http://www.mediacurrent.com/blog/integrating-components-drupal-8-part-2">Integrating Components with Drupal 8 - Part 2</a></li>
+                 <li> <a href="http://www.mediacurrent.com/blog/integrating-components-drupal-8-part-3">Integrating Components with Drupal 8 - Part 3</a></li>
+            </ul>
+        </p>
+        </section>
+
+
+
+        <section>Thanks!</section>
+    </div>
+
+
+    <!-- 2. Create hidden header/footer <div> -->
+        <div id="header">
+            <!--<div id="header-left">HEADER-LEFT</div>-->
+            <!--<div id="header-right">HEADER-RIGHT</div>-->
+            <div id="footer-left">
+
+                <!--<span><img  class="baltimore-logo" alt="Drupalcon Baltimore 2017" src="img/drupalcon-baltimore.svg" width="225"></span>-->
+                <span class="author-title">Adam Weingarten and Mike Madison: Beyond Websites: Using Drupal For Digital Signs </span>
+
+            </div>
+
+            <div id="footer-right">
+                <span><img  class="acquia-logo" alt="Acquia " src="img/acquia.png" width="150"></span>
+            </div>
+        </div>
+</div>
+
+
+
+<script src="src/reveal/js/reveal.js"></script>
+<script>
+    Reveal.initialize(
+        {
+            history: true,
+            width: 1920,
+            height: 1080,
+        }
+    );
+</script>
+
+</body>
+</html>

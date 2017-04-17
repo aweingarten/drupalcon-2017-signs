@@ -1,0 +1,59 @@
+/* 1. Style header/footer <div> so they are positioned as desired. */
+#header-left {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+#header-right {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+#footer-left {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+#footer-right {
+    position: absolute;
+    bottom: 0%;
+    right: 100px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+.reveal .baltimore-logo{
+    max-width:60%;
+}
+.reveal .author-title {
+    font-size:16px;
+    opacity: 0.7;
+}
+
+.reveal section img{
+margin: 15px 0px;
+background: none;
+border: none;
+box-shadow: none;
+}
+
+.reveal h2{
+    font-size: 4.5vw;
+}
+
+body .reveal {
+    font-size: 3.5vw;
+}
+
+.wmata-left{
+    float: left;
+}
+
+.wmata-right{
+    float: right;
+    text-align: left;
+}
+
