@@ -92,7 +92,7 @@
 
         <section>
             <section>
-                <h2>Why do we use drupal to manage content again?</h2>
+                <h2>Why do we use Drupal to manage content again?</h2>
                 <p class="fragment fade-right"> Content Modeling</p>
                 <p class="fragment fade-right"> Screen Controls</p>
                 <p class="fragment fade-right"> Access Controls & Permissions</p>
@@ -174,11 +174,17 @@
 
             <section>
                 <h2>How to loop your drush command when all you have is cron?</h2>
-                <p class="fragment fade-right"> Start with a drush command</p>
-                <p class="fragment fade-right"> Store the credentials in Drupal</p>
-                <p class="fragment fade-right"> Sprinkle in some caching to enforce rate limits.</p>
-                <p class="fragment fade-right"> Parse and normalize data</p>
+                <p class="fragment fade-right"> Use cron to start the script on a regular interval (e.g. 1 minute)</p>
+                <p class="fragment fade-right"> Pass iterations as a drush parameter into your command</p>
+                <p class="fragment fade-right"> Write a loop within the script</p>
+                <p class="fragment fade-right"> Repeat</p>
             </section>
+            <section>
+                <h2>DANGER!</h2>
+                <p class="fragment fade-right"> This assumes that your script can run very fast</p>
+                <p class="fragment fade-right"> Optimize and cache accordingly</p>
+            </section>
+
         </section>
         <!--End Section: consuming feeds-->
 
@@ -186,6 +192,33 @@
         <section>
             <section>
                 <h2>Data Transmission</h2>
+            </section>
+             <section>
+                <h2>Goal:</h2>
+                <p class="fragment fade-right"> Send data to devices from multiple APIs in "real" time</p>
+            </section>
+            <section>
+                <h2>Problem: Data in real time</h2>
+                <p class="fragment fade-right"> Can't constantly reload</p>
+                <p class="fragment fade-right"> Must stay "current" over time</p>
+                <p class="fragment fade-right"> Limited or no user interactivity</p>
+            </section>
+            <section>
+                <h2>Our Solution?</h2>
+            </section>
+            <section>
+                <h2>Use a websocket!</h2>
+                <p class="fragment fade-right"> Long connection time</p>
+                <p class="fragment fade-right"> Nearly instantaneous communication</p>
+                <p class="fragment fade-right"> Can be shared between devices</p>
+                <p class="fragment fade-right"> Bi-directional</p>
+            </section>
+            <section>
+                <h2>...and most importantly</h2>
+            </section>
+            <section>
+                <h2>HIGHLY Scalable</h2>
+                <p class="fragment fade-right"> (pretty critical for a lot of devices getting a lot of data)</p>
             </section>
         </section>
         <!--End Section: Data Transmission-->
@@ -221,7 +254,7 @@
         <section>
             <section>
                 <h2>Wrap Up</h2>
-                <p class="fragment fade-right"> Why drupal is a good idea for signs!</p>
+                <p class="fragment fade-right"> Why Drupal is a good idea for signs!</p>
                 <p class="fragment fade-right"> A few techniques to use</p>
                 <p class="fragment fade-right"> A couple of case studies on how we used them</p>
             </section>
