@@ -55,5 +55,6 @@ body .reveal {
 .wmata-right{
     float: right;
     text-align: left;
+    width: 50%
 }
 
