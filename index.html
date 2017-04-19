@@ -3,6 +3,7 @@
     <title>Beyond Websites: Using Drupal For Digital Signs</title>
     <link rel="stylesheet" href="src/reveal/css/reveal.css">
     <link rel="stylesheet" href="src/reveal/css/theme/black.css">
+    <link rel="stylesheet" href="src/reveal/lib/css/zenburn.css">
     <link rel="stylesheet" href="custom.css">
 </head>
 <body>
@@ -387,13 +388,19 @@
             </div>
 
             <div id="footer-right">
+                <span id="time"></span>
                 <span><img  class="acquia-logo" alt="Acquia " src="img/acquia.png" width="150"></span>
             </div>
         </div>
 </div>
 
 
-
+<script src="src/reveal/lib/js/head.min.js"></script>
+<script src="src/stopwatch.js"></script>
+<script><!-- Printing and PDF exports -->
+show();
+start();
+</script>
 <script src="src/reveal/js/reveal.js"></script>
 <script>
     Reveal.initialize(
@@ -401,6 +408,14 @@
             history: true,
             width: 1920,
             height: 1080,
+            // Optional reveal.js plugins
+            dependencies: [
+                { src: 'src/reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                { src: 'src/reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                { src: 'src/reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                { src: 'src/reveal/plugin/zoom-js/zoom.js', async: true },
+                { src: 'src/reveal/plugin/notes/notes.js', async: true }
+            ]
         }
     );
 </script>
