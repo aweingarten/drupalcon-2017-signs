@@ -50,9 +50,24 @@
 
             <section>
                 <h2>What could those look like?</h2>
-                <p class="fragment fade-right">Personal Aids: Alexa, Siri, Cortana</p>
-                <p class="fragment fade-right">Touch Screen on a Car/Plane</p>
-                <p class="fragment fade-right">Museum Kiosk</p>
+                <p class="fragment fade-right">
+                    <img alt="Siri Logo" src="img/siri.png" width="12%">
+                    <img alt="Amazon Dot" src="img/echo.png" width="20%">
+                    <img alt="Microsoft Cortana" src="img/cortana.png" width="20%">
+                </p>
+
+
+                <p class="fragment fade-right">
+                    <img alt="Touch Screen on a Car/Plane" src="img/tesla.jpg" width="70%">
+                </p>
+
+                <p class="fragment fade-right">
+                    <img alt="Museum Kiosk" src="img/touchscreen-kiosk.jpg" width="70%">
+                </p>
+            </section>
+
+            <section>
+
             </section>
 
             <section>
@@ -111,6 +126,10 @@
 
             <section>
                 <h2>Drupal lets non dev mortals edit the web</h2>
+
+                <p class="fragment fade-left">
+                    <img alt="Museum Kiosk" src="img/drupal_authoring.png" width="50%">
+                </p>
              </section>
 
 
@@ -141,18 +160,35 @@
         <section>
             <section>
                 <h2>Working with External Data and Feeds</h2>
-                <p class="fragment fade-right"> Drupal isn't the source of all things. <span class="fragment fade-right"> Gasp!</span><span class="fragment fade-right"> Heresy!</span></p>
+                <p class="fragment fade-right"> Drupal isn't the source of all things.</p>
+                <p class="fragment fade-right">
+                    <img alt="Amanda Seyfried from mean girls gasping" src="img/gasp.gif" width="40%">
+                </p>
 
                 <p class="fragment fade-right"> It can still help process outside data.</p>
             </section>
 
             <section>
                 <h2>What kind of "external data" from outside APIs:  </h2>
-                <p class="fragment fade-right"> Pinterest, Facebook, Twitter</p>
-                <p class="fragment fade-right"> Train Arrivals</p>
-                <p class="fragment fade-right"> Weather</p>
-                <p class="fragment fade-right"> Stock Quotes</p>
-                <p class="fragment fade-right"> Top News</p>
+                <p class="fragment fade-right">
+                    Pinterest, Facebook, Twitter <br />
+                    <img alt="Amanda Seyfried from mean girls gasping" src="img/logos/facebook.png" width="100">
+                    <img alt="Amanda Seyfried from mean girls gasping" src="img/logos/pinterest.png" width="100">
+                    <img alt="Amanda Seyfried from mean girls gasping" src="img/logos/twitter.png" width="100">
+                </p>
+
+                <p class="fragment fade-right">
+                    Train Arrivals <br />
+                    <img alt="Amanda Seyfried from mean girls gasping" src="img/train-arrivals.jpg" width="100">
+                </p>
+
+                <p class="fragment fade-right"> Weather <br/>
+                    <img alt="Amanda Seyfried from mean girls gasping" src="img/weather.jpg" width="100">
+                </p>
+                <p class="fragment fade-right"> Stock Quotes<br/>
+                    <img alt="Amanda Seyfried from mean girls gasping" src="img/stock-quotes.jpg" width="100"></p>
+                <p class="fragment fade-right"> Top News<br/>
+                    <img alt="Amanda Seyfried from mean girls gasping" src="img/top-news.jpg" width="100"></p>
             </section>
 
             <section>
@@ -179,7 +215,7 @@
                 <h2>Back to our train example...</h2>
                 <p class="fragment fade-right"> Say we have an arrival feed.</p>
                 <p class="fragment fade-right"> Can process updates for specific signs</p>
-                <p class="fragment fade-right"> Let the signs know that something has changed.</p>
+                <p class="fragment fade-right"> Let the signs know that something has changed</p>
                 <p class="fragment fade-right"> Can't do that with a symfony app!</p>
                 <p class="fragment fade-right"> Need to reinvent the wheel!</p>
 
@@ -189,7 +225,7 @@
                 <h2>How does this actually work?</h2>
                 <p class="fragment fade-right"> Start with a drush command</p>
                 <p class="fragment fade-right"> Store the credentials in Drupal</p>
-                <p class="fragment fade-right"> Sprinkle in some caching to enforce rate limits.</p>
+                <p class="fragment fade-right"> Sprinkle in some caching to enforce rate limits</p>
                 <p class="fragment fade-right"> Parse and normalize data</p>
             </section>
 
@@ -218,8 +254,7 @@
 
             <section>
                 <h2>Approaches</h2>
-                <p class="fragment fade-right"> Push me</p>
-                <p class="fragment fade-right"> Pull me</p>
+                <img class="wmata-sign" alt="Push and Pull" src="img/push-pull.jpg" width="40%">
             </section>
 
             <section>
@@ -233,9 +268,15 @@
              <section>
                 <h2>The dream</h2>
                 <p class="fragment fade-right"> Send data to devices from multiple APIs in "real" time</p>
-            </section>
+                 <p class="fragment fade-right">
+                     <img class="wmata-sign" alt="Real time flow" src="img/realtimedata.png" width="50%">
+                 </p>
+
+
+             </section>
             <section>
                 <h2>Problem: Data in real time</h2>
+                <p class="fragment fade-right"> !@$!%@# Caching</p>
                 <p class="fragment fade-right"> Can't constantly reload</p>
                 <p class="fragment fade-right"> Must stay "current" over time</p>
                 <p class="fragment fade-right"> Limited or no user interactivity</p>
@@ -256,6 +297,8 @@
             <section>
                 <h2>HIGHLY Scalable</h2>
                 <p class="fragment fade-right"> (pretty critical for a lot of devices getting a lot of data)</p>
+                <img class="wmata-sign" alt="Websocket" src="img/websocket-flow.png" width="40%">
+
             </section>
             <section>
                 <h2>Case Study: AWS IOT Service</h2>
@@ -362,11 +405,11 @@
                 <h2>Custom extensions to auto reload failed tabs </h2>
                 <img alt="Oh no you didn't chrome extension" src="img/oh-no.png" width="40%">
                 <p class="fragment fade-right"><a href="https://chrome.google.com/webstore/detail/oh-no-you-didnt/acdablfhjbhkjbcifldncdkmlophfgda?hl=en">Oh no you didn't Extension</a></p>
-                <p class="fragment fade-right">You can customise with custom fail pages with recovery</p>
+                <p class="fragment fade-right">Good starting point for a custom extension</p>
             </section>
         </section>
         <!--End Section: Fault tolerance-->
-        
+
         <section>
             <section>
                 <h2>Security</h2>
@@ -381,8 +424,14 @@
                 <h2>Give your hardware some love</h2>
                 <p class="fragment fade-right"> Embedded devices have poor security track-records</p>
                 <p class="fragment fade-right"> Often ship with default passwords.</p>
-                <p class="fragment fade-right"> Rely on insecure unpatched software</p>
                 <p class="fragment fade-right"> Restrict physical access</p>
+            </section>
+
+            <section>
+                <h2>You hardware isn't just hardware. <br /><span class="fragment fade-right">It's also running software.</span></h2>
+                <p class="fragment fade-right"> Make sure that the vendor releases patches in a timely manner</p>
+                <p class="fragment fade-right"> Stay on top of firmware updates</p>
+                <p class="fragment fade-right"> Plan for upgrades when any installed software has a published vulnerability</p>
             </section>
 
             <section>
@@ -398,6 +447,9 @@
                 <p class="fragment fade-right"> No one wants a man in the middle attack</p>
                 <p class="fragment fade-right"> Great way to vandalize your sign</p>
                 <p class="fragment fade-right"> It's a go live blocker</p>
+                <p class="fragment fade-right">
+                    <img  class="wmata-sign" alt="TV Set" src="img/shall-not-pass.gif" width="40%">
+                </p>
             </section>
 
             <section>
@@ -420,6 +472,10 @@
             <section>
                 <h2>Support</h2>
                 <p class="fragment fade-right">Troubleshooting a complex stack with API integrations is hard</p>
+                <p class="fragment fade-right">
+                    <img  class="wmata-sign" alt="IT Crowd image of tech support with fire" src="img/support.gif" width="40%">
+                </p>
+
             </section>
 
             <section>
@@ -476,16 +532,28 @@
         </section>
         <!--End Section: Wrap Up-->
 
-        <section>Questions?
+        <section>
+            <h2>Questions?</h2>
             <p class="fragment fade-right"><a href="https://events.drupal.org/baltimore2017/sessions/beyond-websites-using-drupal-digital-signs">Leave us some feedback!</a></p>
         </section>
 
         <section>
-            <p class="fragment fade-right">Friday sprint reminder slide</p>
+            <h2>Friday sprint reminder slide</h2>
             <p class="fragment fade-right">DA asked us to include this.</p>
         </section>
 
         <section>Thanks!</section>
+
+        <section>
+            <h2>Resources</h2>
+            <ul>
+                Places for Websockets as a Service
+                <li><a href="http://docs.aws.amazon.com/iot/latest/developerguide/protocols.html#mqtt-ws">AWS IOT</a></li>
+                <li><a href="https://www.pubnub.com/">Pubnub</a></li>
+                <li><a href="https://pusher.com/">Pusher</a></li>
+            </ul>
+        </section>
+
     </div>
 
 
