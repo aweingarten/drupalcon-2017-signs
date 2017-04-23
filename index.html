@@ -344,6 +344,7 @@
                 <h2>?</h2>
                 <p class="fragment fade-right"> Which device cares about what data?</p>
                 <p class="fragment fade-right"> What format should the data be provided in?</p>
+                <p class="fragment fade-right"> How do you make sure that only your devices are accessing the data?</p>
             </section>
             <section>
                 <h2>Which device cares about what data?</h2>
@@ -373,9 +374,105 @@
                 <p class="fragment fade-right"> What size screen?</p>
                 <p class="fragment fade-right"> What IP address?</p>
                 <p class="fragment fade-right"> What direction is the screen facing?</p>
+                <p class="fragment fade-right"> What language should the device display?</p>
+            </section>
+            <section>
+                <h2>How do you make sure that only your devices are accessing the data</h2>
+                <p class="fragment fade-right"> Whitelist your system</p>
+                <p class="fragment fade-right"> Make sure your service requires authentication from devices</p>
+                <p class="fragment fade-right"> Require TFA for user access</p>
+                <p class="fragment fade-right"> (let's talk more about this)</p>
             </section>
         </section>
-        <!--End Section: Device Management-->
+                
+        <section>
+            <section>
+                <h2>Security</h2>
+                <p class="fragment fade-right"> You just created a real device in the real world!</p>
+                <p class="fragment fade-right"> And everyone wants to hack it</p>
+                <p class="fragment fade-right">
+                    <img  class="wmata-sign" alt="Map of WMATA Subway System" src="img/bullseye.png" width="20%">
+                </p>
+            </section>
+            <section>
+                <h2>Hacking the Usual Suspects</h2>
+                <p class="fragment fade-right"> Webserver</p>
+                <p class="fragment fade-right"> Drupal</p>
+                <p class="fragment fade-right"> Websocket</p>
+                <p class="fragment fade-right"> Physical Devices</p>
+                <p class="fragment fade-right"> ...and most terrifying: Source Data</p>
+            </section>
+            <section>
+                <h2>Webserver and Drupal</h2>
+                <p class="fragment fade-right"> LOTS of best practices here</p>
+                <p class="fragment fade-right"> Read the interwebs</p>
+                <p class="fragment fade-right"> Watch Drupalcon sessions</p>
+            </section>
+            <section>
+                <h2>Websocket</h2>
+                <p class="fragment fade-right"> Be smart about what you use</p>
+                <p class="fragment fade-right"> Services like Amazon IOT have authentication built in</p>
+            </section>
+            <section>
+                <h2>Give your hardware some love</h2>
+                <p class="fragment fade-right"> Embedded devices have poor security track-records</p>
+                <p class="fragment fade-right"> Often ship with default passwords.</p>
+                <p class="fragment fade-right"> Restrict physical access</p>
+            </section>
+
+            <section>
+                <h2>You hardware isn't just hardware. <br /><span class="fragment fade-right">It's also running software.</span></h2>
+                <p class="fragment fade-right"> Make sure that the vendor releases patches in a timely manner</p>
+                <p class="fragment fade-right"> Stay on top of firmware updates</p>
+                <p class="fragment fade-right"> Plan for upgrades when any installed software has a published vulnerability</p>
+            </section>
+
+            <section>
+                <h2> If it can connect to the interwebs you can hack it</h2>
+                <p class="fragment fade-right">Even a TV can be hacked <br />
+                    <img  class="wmata-sign" alt="TV Set" src="img/tv.png" width="20%">
+                </p>
+            </section>
+            <section>
+                <h2>Source Data</h2>
+                <p class="fragment fade-right"> Guard the back door!!!!</p>
+                <p class="fragment fade-right"> MUST be as secure (or more so) than the rest of the stack</p>
+                <p class="fragment fade-right"> Validate your data</p>
+                <p class="fragment fade-right"> Audit your data</p>
+            </section>
+            <section>
+                <h2>It's 2017 use SSL everywhere</h2>
+                <p class="fragment fade-right"> No one wants a man in the middle attack</p>
+                <p class="fragment fade-right"> Great way to vandalize your sign</p>
+                <p class="fragment fade-right"> It's a go live blocker</p>
+                <p class="fragment fade-right">
+                    <img  class="wmata-sign" alt="TV Set" src="img/shall-not-pass.gif" width="40%">
+                </p>
+            </section>
+
+            <section>
+                <h2>General Best Practices</h2>
+                <p class="fragment fade-right"> Prevent public IPs from logging in </p>
+                <p class="fragment fade-right"> TFA</p>
+                <p class="fragment fade-right"> Saml/SSO</p>
+                <p class="fragment fade-right"> Lock down user accounts</p>
+            </section>
+
+            <section>
+                <h2> It's not paranoia if they are really out to get you</h2>
+                <p class="fragment fade-right">In case you were wondering: they are.</p>
+            </section>
+
+            <section>
+                <h2> Lastly...</h2>
+                <p class="fragment fade-right">You can take all these precautions and still have issues</p>
+                <p class="fragment fade-right">Be prepared for DOS and other attacks</p>
+                <p class="fragment fade-right">Hacking isn't just taking over a device</p>
+                <p class="fragment fade-right">(sometimes bringing down a web server is just as effective as controlling it)</p>
+            </section>
+
+        </section>
+        <!--End Section: Security-->
 
 
         <section>
@@ -416,64 +513,7 @@
             </section>
         </section>
         <!--End Section: Fault tolerance-->
-
-        <section>
-            <section>
-                <h2>Security</h2>
-                <p class="fragment fade-right"> You just created a real device in the real world!</p>
-                <p class="fragment fade-right"> And everyone wants to hack it</p>
-                <p class="fragment fade-right">
-                    <img  class="wmata-sign" alt="Map of WMATA Subway System" src="img/bullseye.png" width="20%">
-                </p>
-            </section>
-
-            <section>
-                <h2>Give your hardware some love</h2>
-                <p class="fragment fade-right"> Embedded devices have poor security track-records</p>
-                <p class="fragment fade-right"> Often ship with default passwords.</p>
-                <p class="fragment fade-right"> Restrict physical access</p>
-            </section>
-
-            <section>
-                <h2>You hardware isn't just hardware. <br /><span class="fragment fade-right">It's also running software.</span></h2>
-                <p class="fragment fade-right"> Make sure that the vendor releases patches in a timely manner</p>
-                <p class="fragment fade-right"> Stay on top of firmware updates</p>
-                <p class="fragment fade-right"> Plan for upgrades when any installed software has a published vulnerability</p>
-            </section>
-
-            <section>
-                <h2> If it can connect to the interwebs you can hack it</h2>
-                <p class="fragment fade-right">Even a TV can be hacked <br />
-                    <img  class="wmata-sign" alt="TV Set" src="img/tv.png" width="20%">
-                </p>
-
-            </section>
-
-            <section>
-                <h2>It's 2017 use SSL everywhere</h2>
-                <p class="fragment fade-right"> No one wants a man in the middle attack</p>
-                <p class="fragment fade-right"> Great way to vandalize your sign</p>
-                <p class="fragment fade-right"> It's a go live blocker</p>
-                <p class="fragment fade-right">
-                    <img  class="wmata-sign" alt="TV Set" src="img/shall-not-pass.gif" width="40%">
-                </p>
-            </section>
-
-            <section>
-                <h2>General Best Practices</h2>
-                <p class="fragment fade-right"> Prevent public IPs from logging in </p>
-                <p class="fragment fade-right"> TFA</p>
-                <p class="fragment fade-right"> Saml/SSO</p>
-                <p class="fragment fade-right"> Lock down user accounts</p>
-            </section>
-
-            <section>
-                <h2> It's not paranoia if they are really out to get you</h2>
-                <p class="fragment fade-right">In case you were wondering: they are.</p>
-            </section>
-
-        </section>
-        <!--End Section: Security-->
+        
 
         <section>
             <section>
@@ -486,32 +526,28 @@
             </section>
 
             <section>
-                <h2>Say you have 5 screens with a polling model</h2>
-                <p class="fragment fade-right">Each screen phones home every second!</p>
-                <p class="fragment fade-right">Everything is working</p>
-
-                <p class="fragment fade-right">
-                    <img alt="20 Screens polling" src="img/polling-5.png" width="70%">
-                </p>
-            </section>
-
-            <section>
-                <h2>Now add 5 more screens!</h2>
-                <p class="fragment fade-right">Screens all go down</p>
+                <h2>Let's pretend you didn't see this presentation</h2>
+                <p class="fragment fade-right">Devices use Angular to poll various APIs in real time (directly)</p>
+                <p class="fragment fade-right">You didn't load test any of your webservers befor launch</p>
+                <p class="fragment fade-right">You add 20 more screens in production</p>
                 <p class="fragment fade-right">
                     <img alt="10 Screens polling" src="img/polling-10.png" width="40%">
                 </p>
-                <p class="fragment fade-right">How do you troubleshoot?</p>
+            </section>
 
+            <section>
+                <h2>All of your screens lose data simultanesouly</h2>
+                <p class="fragment fade-right">How do you troubleshoot?</p>
+                <p class="fragment fade-right">Did a server powering one of the APIs crash?</p>
+                <p class="fragment fade-right">Did the webserver crash?</p>
             </section>
 
 
 
-
-
             <section>
-                <h2>Understand the health of your backend APIs</h2>
+                <h2>Understanding the Architecture</h2>
                 <p class="fragment fade-right">Make sure support knows what those APIs are.</p>
+                <p class="fragment fade-right">Make sure support knows the warnings signs and symptoms of problems.</p>
             </section>
 
 
@@ -524,15 +560,22 @@
             <section>
                 <h2>Know what you can and can't fix</h2>
                 <p class="fragment fade-right">Figure this out before something bad happens</p>
+                <p class="fragment fade-right">(that includes testing before hand)</p>
             </section>
 
             <section>
                 <h2>Load test before scaling up</h2>
+                <p class="fragment fade-right">Mirror the production hardware</p>
+                <p class="fragment fade-right">Including any dependent APIs</p>
+
+            </section>
+            <section>
+                <h2>And remember!</h2>
+                <p class="fragment fade-right">Your source APIs may not have as robust of a workflow as your main site</p>
+                <p class="fragment fade-right">Make sure the owners of those systems know not to make changes without notifying your dev team</p>
                 <p class="fragment fade-right">
                     <img alt="I don't always test. but when I do, I do it in production." src="img/test_in_prod.jpg" width="20%">
                 </p>
-                <p class="fragment fade-right">Mirror the production hardware</p>
-                <p class="fragment fade-right">Including any dependent APIs</p>
 
             </section>
         </section>
