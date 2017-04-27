@@ -146,7 +146,7 @@
 
             <aside class ="notes">Mike<br>
               <ul>
-                <li>Even in a headless world drupal has a place</li>
+                <li>Even in a headless world Drupal has a place</li>
                 <li>Makes it easy to author and edit</li>
                 <li>Has views to find the right content</li>
                 <li>Services to spit it out</li>
@@ -196,17 +196,17 @@
 
           <div class="wmata-right">
             <p class="fragment fade-right"> <strong>Lines:</strong> Red, Blue, Yellow, Green</p>
-            <p class="fragment fade-right"> <strong>Line Direction:</strong> Shady Grove or  Glenmont</p>
+            <p class="fragment fade-right"> <strong>Line Direction:</strong> Shady Grove or Glenmont</p>
             <p class="fragment fade-right"> <strong>Stations:</strong> Metro Center, Smithsonian, Farragut North</p>
-            <p class="fragment fade-right"> <strong>Platforms:</strong> Single platform can service Mutiple lines.</p>
+            <p class="fragment fade-right"> <strong>Platforms:</strong> Single platform can service Multiple lines.</p>
           </div>
 
           <aside class ="notes">Adam<br>
             <ul>
               <li> <strong>Lines:</strong> Red, Blue, Yellow, Green</li>
-              <li> <strong>Line Direction:</strong> Shady Grove or  Glenmont</li>
+              <li> <strong>Line Direction:</strong> Shady Grove or Glenmont</li>
               <li> <strong>Stations:</strong> Metro Center, Smithsonian, Farragut North</li>
-              <li> <strong>Platforms:</strong> Single platform can service Mutiple lines.</li>
+              <li> <strong>Platforms:</strong> Single platform can service Multiple lines.</li>
             </ul>
           </aside>
         </section>
@@ -222,7 +222,7 @@
           </aside>
         </section>
       </section>
-      <!--End Section: why drupal?-->
+      <!--End Section: why Drupal?-->
 
 
       <section>
@@ -283,13 +283,13 @@
 
         <section>
           <h2>Just do it on the client side? <span class="fragment fade-right">Nope.</span> </h2>
-          <p class="fragment fade-right"> Api Rate Limiting </p>
+          <p class="fragment fade-right"> API Rate Limiting </p>
           <p class="fragment fade-right"> Security/Credentials</p>
           <p class="fragment fade-right"> Client processing introduces inconsistencies.</p>
 
           <aside class ="notes">Adam<br>
             <ul>
-              <li>Api Rate Limiting</li>
+              <li>API Rate Limiting</li>
               <li>Security/Credentials</li>
               <li>Client processing introduces inconsistencies</li>
             </ul>
@@ -310,7 +310,7 @@
 
           <aside class ="notes">Adam<br>
             <ul>
-              <li> Remember that drupal content model?</li>
+              <li> Remember that Drupal content model?</li>
               <li>We can use it to to process that data!</li>
             </ul>
           </aside>
@@ -321,7 +321,7 @@
           <p class="fragment fade-right"> Say we have an arrival feed.</p>
           <p class="fragment fade-right"> Can process updates for specific signs</p>
           <p class="fragment fade-right"> Let the signs know that something has changed</p>
-          <p class="fragment fade-right"> Can't do that with a symfony app!</p>
+          <p class="fragment fade-right"> Can't do that with a Symfony app!</p>
           <p class="fragment fade-right"> Need to reinvent the wheel!</p>
 
           <aside class ="notes">Adam<br>
@@ -329,7 +329,7 @@
               <li> Say we have an arrival feed</li>
               <li>Can process updates for specific signs</li>
               <li>Let the signs know that something has changed</li>
-              <li>Can't do that with a symfony app!</li>
+              <li>Can't do that with a Symfony app!</li>
               <li>Need to reinvent the wheel!</li>
             </ul>
           </aside>
@@ -338,14 +338,14 @@
 
         <section>
           <h2>How does this actually work?</h2>
-          <p class="fragment fade-right"> Start with a drush command</p>
+          <p class="fragment fade-right"> Start with a Drush command</p>
           <p class="fragment fade-right"> Store the credentials in Drupal</p>
           <p class="fragment fade-right"> Sprinkle in some caching to enforce rate limits</p>
           <p class="fragment fade-right"> Parse and normalize data</p>
 
           <aside class ="notes">Adam<br>
             <ul>
-              <li>Start with a drush command</li>
+              <li>Start with a Drush command</li>
               <li>Store the credentials in Drupal</li>
               <li>Let the signs know that something has changed</li>
               <li>Sprinkle in some caching to enforce rate limits</li>
@@ -355,16 +355,16 @@
         </section>
 
         <section>
-          <h2>How to loop your drush command when all you have is cron?</h2>
+          <h2>How to loop your Drush command when all you have is cron?</h2>
           <p class="fragment fade-right"> Use cron to start the script on a regular interval (e.g. 1 minute)</p>
-          <p class="fragment fade-right"> Pass iterations as a drush parameter into your command</p>
+          <p class="fragment fade-right"> Pass iterations as a Drush parameter into your command</p>
           <p class="fragment fade-right"> Write a loop within the script</p>
           <p class="fragment fade-right"> Repeat</p>
 
           <aside class ="notes">Adam<br>
             <ul>
               <li>Use cron to start the script on a regular interval (e.g. 1 minute)</li>
-              <li>Pass iterations as a drush parameter into your command</li>
+              <li>Pass iterations as a Drush parameter into your command</li>
               <li>Write a loop within the script</li>
               <li>Repeat</li>
             </ul>
@@ -661,7 +661,7 @@
       </section>
 
       <section>
-        <h2>At somepoint you will have a problem that you can't handle</h2>
+        <h2>At some point you will have a problem that you can't handle</h2>
         <img alt="Blue Screen of Death on a sign" src="img/google-chrome-aw-snap.jpg" width="70%">
         <p class="fragment fade-right">
         </section>
@@ -695,7 +695,7 @@
         <section>
           <h2>Let's pretend you didn't see this presentation</h2>
           <p class="fragment fade-right">Devices use Angular to poll various APIs in real time (directly)</p>
-          <p class="fragment fade-right">You didn't load test any of your webservers befor launch</p>
+          <p class="fragment fade-right">You didn't load test any of your web servers before launch</p>
           <p class="fragment fade-right">You add 20 more screens in production</p>
           <p class="fragment fade-right">
             <img alt="10 Screens polling" src="img/polling-10.png" width="40%">
@@ -703,21 +703,21 @@
 
           <aside class ="notes"> <br>
             <p class="fragment fade-right">Devices use Angular to poll various APIs in real time (directly)</p>
-            <p class="fragment fade-right">You didn't load test any of your webservers befor launch</p>
+            <p class="fragment fade-right">You didn't load test any of your web servers before launch</p>
             <p class="fragment fade-right">You add 20 more screens in production</p>
           </aside>
         </section>
 
         <section>
-          <h2>All of your screens lose data simultanesouly</h2>
+          <h2>All of your screens lose data simultaneously</h2>
           <p class="fragment fade-right">How do you troubleshoot?</p>
           <p class="fragment fade-right">Did a server powering one of the APIs crash?</p>
-          <p class="fragment fade-right">Did the webserver crash?</p>
+          <p class="fragment fade-right">Did the web server crash?</p>
 
           <aside class ="notes"> <br>
             <p class="fragment fade-right">How do you troubleshoot?</p>
             <p class="fragment fade-right">Did a server powering one of the APIs crash?</p>
-            <p class="fragment fade-right">Did the webserver crash?</p>
+            <p class="fragment fade-right">Did the web server crash?</p>
           </aside>
         </section>
 
