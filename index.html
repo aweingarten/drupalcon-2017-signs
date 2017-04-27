@@ -1,882 +1,995 @@
 <html>
-<head>
+  <head>
     <title>Beyond Websites: Using Drupal For Digital Signs</title>
     <link rel="stylesheet" href="src/reveal/css/reveal.css">
     <link rel="stylesheet" href="src/reveal/css/theme/black.css">
     <link rel="stylesheet" href="src/reveal/lib/css/zenburn.css">
     <link rel="stylesheet" href="custom.css">
-</head>
-<body>
-<div class="reveal">
-    <div class="slides">
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
         <section class="present" style="top: 143.5px; display: block;">
-            <h2>Beyond Websites: Using Drupal For Digital Signs</h2>
-            <span><img  class="acquia-color-logo" alt="Acquia Logo" src="img/acquia-colors.png" width="225"></span>
+          <h2>Beyond Websites: Using Drupal For Digital Signs</h2>
+          <span><img  class="acquia-color-logo" alt="Acquia Logo" src="img/acquia-colors.png" width="225"></span>
 
-            <span><img  class="baltimore-logo" alt="Drupalcon Baltimore 2017" src="img/drupalcon-baltimore.svg" width="225"></span>
+          <span><img  class="baltimore-logo" alt="Drupalcon Baltimore 2017" src="img/drupalcon-baltimore.svg" width="225"></span>
         </section>
 
         <section>
-            <section>About Us</section>
+          <section>About Us</section>
 
-            <section>
-                Adam Weingarten
-                <p class="fragment fade-right">Technical Architect, Acquia</p>
-                <p class="fragment fade-right">
-                    D.O: <a href="https://www.drupal.org/u/adamweingarten"> adam.weingarten </a> <br />
-                    github: <a href="https://github.com/aweingarten/">aweingarten</a> <br />
-                    linkedin: <a href="https://www.linkedin.com/in/adamweingarten"> adam.weingarten</a>
-                </p>
-            </section>
+          <section>
+            Adam Weingarten
+            <p class="fragment fade-right">Technical Architect, Acquia</p>
+            <p class="fragment fade-right">
+              D.O: <a href="https://www.drupal.org/u/adamweingarten"> adam.weingarten </a> <br />
+              github: <a href="https://github.com/aweingarten/">aweingarten</a> <br />
+              linkedin: <a href="https://www.linkedin.com/in/adamweingarten"> adam.weingarten</a>
+            </p>
+          </section>
 
-            <section>Mike Madison
-                    <p class="fragment fade-right">Technical Architect, Acquia</p>
-                    <p class="fragment fade-right">
-                        D.O: <a href="https://www.drupal.org/u/mikemadison">mikemadison </a> <br />
-                        github: <a href="https://github.com/mikemadison13">mikemadison13</a> <br />
-                        linkedin: <a href="https://www.linkedin.com/in/mikemadison">mikemadison</a>
-                    </p>
-            </section>
+          <section>Mike Madison
+            <p class="fragment fade-right">Technical Architect, Acquia</p>
+            <p class="fragment fade-right">
+              D.O: <a href="https://www.drupal.org/u/mikemadison">mikemadison </a> <br />
+              github: <a href="https://github.com/mikemadison13">mikemadison13</a> <br />
+              linkedin: <a href="https://www.linkedin.com/in/mikemadison">mikemadison</a>
+            </p>
+          </section>
         </section>
         <!--End Section: About Us-->
 
 
         <section>
-            <section>
-                <h2>Why are we here?</h2>
-                <p class="fragment fade-right">Next-generation digital experiences </p>
-                <p class="fragment fade-right">Beyond conventional browser </p>
+          <section>
+            <h2>Why are we here?</h2>
+            <p class="fragment fade-right">Next-generation digital experiences </p>
+            <p class="fragment fade-right">Beyond conventional browser </p>
 
 
-                <aside class ="notes">Adam<br>
-                    <ul>
-                        <li>Next-generation digital experiences </li>
-                        <li>Beyond conventional browser</li>
-                    </ul>
-                </aside>
-            </section>
+            <aside class ="notes">Adam<br>
+              <ul>
+                <li>Next-generation digital experiences </li>
+                <li>Beyond conventional browser</li>
+              </ul>
+            </aside>
+          </section>
 
-            <section>
-                <h2>What could those look like?</h2>
-                <p class="fragment fade-right">
-                    <img alt="Siri Logo" src="img/siri.png" width="12%">
-                    <img alt="Amazon Dot" src="img/echo.png" width="20%">
-                    <img alt="Microsoft Cortana" src="img/cortana.png" width="20%">
-                </p>
+          <section>
+            <h2>What could those look like?</h2>
+            <p class="fragment fade-right">
+              <img alt="Siri Logo" src="img/siri.png" width="12%">
+              <img alt="Amazon Dot" src="img/echo.png" width="20%">
+              <img alt="Microsoft Cortana" src="img/cortana.png" width="20%">
+            </p>
 
-                <aside class ="notes">Adam<br>
-                    <ul>
-                        <li>Siri </li>
-                        <li>Dot</li>
-                        <li>Cortana</li>
-                    </ul>
-                </aside>
-            </section>
+            <aside class ="notes">Adam<br>
+              <ul>
+                <li>Siri </li>
+                <li>Dot</li>
+                <li>Cortana</li>
+              </ul>
+            </aside>
+          </section>
 
-            <section>
-                <h2>Touch Screen on a Car/Plane</h2>
-                <img alt="Touch Screen on a Car/Plane" src="img/tesla.jpg" width="60%">
-            </section>
+          <section>
+            <h2>Touch Screen on a Car/Plane</h2>
+            <img alt="Touch Screen on a Car/Plane" src="img/tesla.jpg" width="60%">
+          </section>
 
-            <section>
-                <h2>Mall Kiosk</h2>
-                <img alt="Museum Kiosk" src="img/touchscreen-kiosk.jpg" width="60%">
-            </section>
-
-
-            <section>
-                <h2>Why are we really here? <span class="fragment fade-right">Signs!</span></h2>
-            </section>
-
-            <section>
-                <h2>What are you going to hear about?</h2>
-                <p class="fragment fade-right">Content Management</p>
-                <p class="fragment fade-right">Working with external data</p>
-                <p class="fragment fade-right">Data Transmission</p>
-                <p class="fragment fade-right">Device Management</p>
-                <p class="fragment fade-right">Security</p>
-                <p class="fragment fade-right">Support</p>
-                <p class="fragment fade-right">Case Studies</p>
-
-                <aside class ="notes">Mike<br>
-                    <ul>
-                        <li>Content Management</li>
-                        <li>Working with external data</li>
-                        <li>Data Transmission</li>
-                        <li>Device Management</li>
-                        <li>Security</li>
-                        <li>Support</li>
-                        <li>Case Studies</li>
-                    </ul>
-                </aside>
-            </section>
+          <section>
+            <h2>Mall Kiosk</h2>
+            <img alt="Museum Kiosk" src="img/touchscreen-kiosk.jpg" width="60%">
+          </section>
 
 
-            <section>
-                <h2>Why even use Drupal to power a sign? <br /> <span class="fragment fade-right">Skeptics say: There are better options!</span></h2>
-                <span class="fragment fade-right">Caution: Gratuitous opportunity to cram in buzzwords and technologies!</span>
+          <section>
+            <h2>Why are we really here? <span class="fragment fade-right">Signs!</span></h2>
+          </section>
 
-                <div class="fragment fade-right">
-                <span><img  class="acquia-color-logo" alt="HTML 5 Logo" src="img/logos/html5_logo.png" width="225"></span>
-                <span><img  class="acquia-color-logo" alt="Symfony Logo" src="img/logos/symfony_logo.png" width="300"></span>
-                <span><img  class="acquia-color-logo" alt="Node Logo" src="img/logos/node_logo.png" width="225"></span>
-                <span><img  class="acquia-color-logo" alt="Ember Logo" src="img/logos/ember_logo.png" width="225"></span>
-                <span><img  class="acquia-color-logo" alt="Angular Logo" src="img/logos/angular_logo.png" width="225"></span>
-                <span><img  class="acquia-color-logo" alt="React Logo" src="img/logos/react_logo.png" width="225"></span>
-                </div>
+          <section>
+            <h2>What are you going to hear about?</h2>
+            <p class="fragment fade-right">Content Management</p>
+            <p class="fragment fade-right">Working with external data</p>
+            <p class="fragment fade-right">Data Transmission</p>
+            <p class="fragment fade-right">Device Management</p>
+            <p class="fragment fade-right">Security</p>
+            <p class="fragment fade-right">Support</p>
+            <p class="fragment fade-right">Case Studies</p>
 
-                <p class="fragment fade-left">Great DX. Horrible UX.</p>
+            <aside class ="notes">Mike<br>
+              <ul>
+                <li>Content Management</li>
+                <li>Working with external data</li>
+                <li>Data Transmission</li>
+                <li>Device Management</li>
+                <li>Security</li>
+                <li>Support</li>
+                <li>Case Studies</li>
+              </ul>
+            </aside>
+          </section>
 
-                <aside class ="notes">Mike<br>
-                    <ul>
-                        <li>Skeptics say: There are better options!</li>
-                        <li>Caution: Gratuitous opportunity to cram in buzzwords and technologies!</li>
-                        <li>Images of logos</li>
-                        <li>Great DX. Horrible UX.</li>
-                    </ul>
-                </aside>
-            </section>
 
-            <section>
-                <h2>Drupal provides UX for managing content!</h2>
-                <p class="fragment fade-right">Even in a headless world Drupal has a place</p>
-                <p class="fragment fade-right">Makes it easy to author and edit</p>
-                <p class="fragment fade-right">Has views to find the right content</p>
-                <p class="fragment fade-right">Services to spit it out</p>
+          <section>
+            <h2>Why even use Drupal to power a sign? <br /> <span class="fragment fade-right">Skeptics say: There are better options!</span></h2>
+            <span class="fragment fade-right">Caution: Gratuitous opportunity to cram in buzzwords and technologies!</span>
 
-                <aside class ="notes">Mike<br>
-                    <ul>
-                        <li>Even in a headless world drupal has a place</li>
-                        <li>Makes it easy to author and edit</li>
-                        <li>Has views to find the right content</li>
-                        <li>Services to spit it out</li>
-                    </ul>
-                </aside>
+            <div class="fragment fade-right">
+              <span><img  class="acquia-color-logo" alt="HTML 5 Logo" src="img/logos/html5_logo.png" width="225"></span>
+              <span><img  class="acquia-color-logo" alt="Symfony Logo" src="img/logos/symfony_logo.png" width="300"></span>
+              <span><img  class="acquia-color-logo" alt="Node Logo" src="img/logos/node_logo.png" width="225"></span>
+              <span><img  class="acquia-color-logo" alt="Ember Logo" src="img/logos/ember_logo.png" width="225"></span>
+              <span><img  class="acquia-color-logo" alt="Angular Logo" src="img/logos/angular_logo.png" width="225"></span>
+              <span><img  class="acquia-color-logo" alt="React Logo" src="img/logos/react_logo.png" width="225"></span>
+            </div>
 
-            </section>
+            <p class="fragment fade-left">Great DX. Horrible UX.</p>
+
+            <aside class ="notes">Mike<br>
+              <ul>
+                <li>Skeptics say: There are better options!</li>
+                <li>Caution: Gratuitous opportunity to cram in buzzwords and technologies!</li>
+                <li>Images of logos</li>
+                <li>Great DX. Horrible UX.</li>
+              </ul>
+            </aside>
+          </section>
+
+          <section>
+            <h2>Drupal provides UX for managing content!</h2>
+            <p class="fragment fade-right">Even in a headless world Drupal has a place</p>
+            <p class="fragment fade-right">Makes it easy to author and edit</p>
+            <p class="fragment fade-right">Has views to find the right content</p>
+            <p class="fragment fade-right">Services to spit it out</p>
+
+            <aside class ="notes">Mike<br>
+              <ul>
+                <li>Even in a headless world drupal has a place</li>
+                <li>Makes it easy to author and edit</li>
+                <li>Has views to find the right content</li>
+                <li>Services to spit it out</li>
+              </ul>
+            </aside>
+
+          </section>
         </section>
         <!--End Section: why we are here-->
 
         <section>
-            <section>
-                <h2>Why do we use Drupal to manage content again?</h2>
-                <p class="fragment fade-right"> Content Modeling</p>
-                <p class="fragment fade-right"> Access Controls & Permissions</p>
-                <p class="fragment fade-right"> Revisioning</p>
-                <p class="fragment fade-right"> Translations</p>
-                <p class="fragment fade-right">Reproducing this elsewhere is expensive</p>
-
-                <aside class ="notes">Adam<br>
-                    <ul>
-                        <li>Content Modeling</li>
-                        <li>Access Controls & Permissions</li>
-                        <li>Revisioning</li>
-                        <li>Translations</li>
-                        <li>Reproducing this elsewhere is expensive</li>
-                    </ul>
-                </aside>
-            </section>
-
-            <section>
-                <h2>Drupal lets non dev mortals edit the web</h2>
-
-                <p class="fragment fade-left">
-                    <img alt="Drupal Authoring example" src="img/drupal_authoring.png" width="50%">
-                </p>
-             </section>
-
-
-                <section>
-                <h2>Content Model Example: <span class="fragment fade-right">DC Metro!</span></h2>
-                </h2>
-
-                <div class="wmata-left">
-                    <img  class="wmata-sign" alt="Map of WMATA Subway System" src="img/wmata_map.png" width="60%">
-                </div>
-
-                <div class="wmata-right">
-                    <p class="fragment fade-right"> <strong>Lines:</strong> Red, Blue, Yellow, Green</p>
-                    <p class="fragment fade-right"> <strong>Line Direction:</strong> Shady Grove or  Glenmont</p>
-                    <p class="fragment fade-right"> <strong>Stations:</strong> Metro Center, Smithsonian, Farragut North</p>
-                    <p class="fragment fade-right"> <strong>Platforms:</strong> Single platform can service Mutiple lines.</p>
-                </div>
-
-                    <aside class ="notes">Adam<br>
-                        <ul>
-                            <li> <strong>Lines:</strong> Red, Blue, Yellow, Green</li>
-                            <li> <strong>Line Direction:</strong> Shady Grove or  Glenmont</li>
-                            <li> <strong>Stations:</strong> Metro Center, Smithsonian, Farragut North</li>
-                            <li> <strong>Platforms:</strong> Single platform can service Mutiple lines.</li>
-                        </ul>
-                    </aside>
-            </section>
-
-            <section>
-                <h2>D8 Makes it easy to syndicate this data using webservices</h2>
-                <p class="fragment fade-right"> Build your own API</p>
-
-                <aside class ="notes">Adam<br>
-                    <ul>
-                        <li>Build your own API.</li>
-                    </ul>
-                </aside>
-            </section>
-        </section>
-        <!--End Section: why drupal?-->
-
-
-        <section>
-            <section>
-                <h2>Working with External Data and Feeds</h2>
-                <p class="fragment fade-right"> Drupal isn't the source of all things.</p>
-                <p class="fragment fade-right">
-                    <img alt="Amanda Seyfried from mean girls gasping" src="img/gasp.gif" width="40%">
-                </p>
-
-                <p class="fragment fade-right"> It can still help process outside data.</p>
-
-                <aside class ="notes">Adam<br>
-                    <ul>
-                        <li>Drupal isn't the source of all things.</li>
-                        <li>It can still help process outside data.</li>
-                    </ul>
-                </aside>
-            </section>
-
-            <section>
-                <h2>What kind of "external data" from outside APIs:  </h2>
-                <p class="fragment fade-right">
-                    Pinterest, Facebook, Twitter <br />
-                    <img alt="Facebooks" src="img/logos/facebook.png" width="100">
-                    <img alt="Pinterest" src="img/logos/pinterest.png" width="100">
-                    <img alt="Twitter" src="img/logos/twitter.png" width="100">
-                </p>
-
-                <aside class ="notes">Adam<br>
-                    <ul>
-                        <li>Pinterest, Facebook, Twitter.</li>
-                    </ul>
-                </aside>
-            </section>
-
-            <section>
-                <p class="fragment fade-right">
-                    <h2>Train Arrivals</h2>
-                        <img alt="Train Arrivals" src="img/train-arrivals.jpg" width="60%">
-                    </p>
-            </section>
-
-            <section>
-                <h2>Weather</h2>
-                <img alt="Weather" src="img/weather.jpg" width="60%">
-            </section>
-
-            <section>
-                <h2> Stock Quotes</h2>
-                    <img alt="Stock Quotes" src="img/stock-quotes.jpg" width="60%"></p>
-            </section>
-
-            <section>
-                <h2>Top News</h2>
-                    <img alt="Top News" src="img/top-news.jpg" width="60%"></p>
-            </section>
-
-            <section>
-                <h2>Just do it on the client side? <span class="fragment fade-right">Nope.</span> </h2>
-                <p class="fragment fade-right"> Api Rate Limiting </p>
-                <p class="fragment fade-right"> Security/Credentials</p>
-                <p class="fragment fade-right"> Client processing introduces inconsistencies.</p>
-
-                <aside class ="notes">Adam<br>
-                    <ul>
-                        <li>Api Rate Limiting</li>
-                        <li>Security/Credentials</li>
-                        <li>Client processing introduces inconsistencies</li>
-                    </ul>
-                </aside>
-            </section>
-
-            <section>
-                <h2>Why not just write a Symfony app??</h2>
-                <p class="fragment fade-right">
-                    <img class="wmata-sign" alt="Hater Gonna Hate" src="img/cranks.jpg" width="40%">
-                </p>
-            </section>
-
-            <section>
-                <h2>Context is everything</h2>
-                <p class="fragment fade-right"> Remember that Drupal content model?</p>
-                <p class="fragment fade-right"> We can use it to to process that data!</p>
-
-                <aside class ="notes">Adam<br>
-                    <ul>
-                        <li> Remember that drupal content model?</li>
-                        <li>We can use it to to process that data!</li>
-                    </ul>
-                </aside>
-            </section>
-
-            <section>
-                <h2>Back to our train example...</h2>
-                <p class="fragment fade-right"> Say we have an arrival feed.</p>
-                <p class="fragment fade-right"> Can process updates for specific signs</p>
-                <p class="fragment fade-right"> Let the signs know that something has changed</p>
-                <p class="fragment fade-right"> Can't do that with a symfony app!</p>
-                <p class="fragment fade-right"> Need to reinvent the wheel!</p>
-
-                <aside class ="notes">Adam<br>
-                    <ul>
-                        <li> Say we have an arrival feed</li>
-                        <li>Can process updates for specific signs</li>
-                        <li>Let the signs know that something has changed</li>
-                        <li>Can't do that with a symfony app!</li>
-                        <li>Need to reinvent the wheel!</li>
-                    </ul>
-                </aside>
-
-            </section>
-
-            <section>
-                <h2>How does this actually work?</h2>
-                <p class="fragment fade-right"> Start with a drush command</p>
-                <p class="fragment fade-right"> Store the credentials in Drupal</p>
-                <p class="fragment fade-right"> Sprinkle in some caching to enforce rate limits</p>
-                <p class="fragment fade-right"> Parse and normalize data</p>
-
-                <aside class ="notes">Adam<br>
-                    <ul>
-                        <li>Start with a drush command</li>
-                        <li>Store the credentials in Drupal</li>
-                        <li>Let the signs know that something has changed</li>
-                        <li>Sprinkle in some caching to enforce rate limits</li>
-                        <li>Parse and normalize data</li>
-                    </ul>
-                </aside>
-            </section>
-
-            <section>
-                <h2>How to loop your drush command when all you have is cron?</h2>
-                <p class="fragment fade-right"> Use cron to start the script on a regular interval (e.g. 1 minute)</p>
-                <p class="fragment fade-right"> Pass iterations as a drush parameter into your command</p>
-                <p class="fragment fade-right"> Write a loop within the script</p>
-                <p class="fragment fade-right"> Repeat</p>
-
-                <aside class ="notes">Adam<br>
-                    <ul>
-                        <li>Use cron to start the script on a regular interval (e.g. 1 minute)</li>
-                        <li>Pass iterations as a drush parameter into your command</li>
-                        <li>Write a loop within the script</li>
-                        <li>Repeat</li>
-                    </ul>
-                </aside>
-            </section>
-            <section>
-                <h2>DANGER!</h2>
-                <p class="fragment fade-right"> This assumes that your script can run very fast</p>
-                <p class="fragment fade-right"> Optimize and cache accordingly</p>
-
-                <aside class ="notes">Adam<br>
-                    <ul>
-                        <li> This assumes that your script can run very fast</li>
-                        <li> Optimize and cache accordingly</li>
-                    </ul>
-                </aside>
-            </section>
-
-        </section>
-        <!--End Section: consuming feeds-->
-
-
-        <section>
-            <section>
-                <h2>Data Transmission</h2>
-                <p class="fragment fade-right"> Getting information from Drupal to your device</p>
-            </section>
-
-            <section>
-                <h2>Approaches</h2>
-                <img class="wmata-sign" alt="Push and Pull" src="img/push-pull.jpg" width="40%">
-            </section>
-
-            <section>
-                <h2>Pull suks</h2>
-                <p class="fragment fade-right"> High Traffic</p>
-                <p class="fragment fade-right"> Load on devices</p>
-                <p class="fragment fade-right"> Load on servers</p>
-                <p class="fragment fade-right"> Can mimic DDOS</p>
-
-                <aside class ="notes">Adam<br>
-                    <ul>
-                        <li>High Traffic</li>
-                        <li>Load on devices</li>
-                        <li>Load on servers</li>
-                        <li>Can mimic DDOS</li>
-                    </ul>
-                </aside>
-            </section>
-
-             <section>
-                <h2>The dream</h2>
-                <p class="fragment fade-right"> Send data to devices from multiple APIs in "real" time</p>
-                 <p class="fragment fade-right">
-                     <img class="wmata-sign" alt="Real time flow" src="img/realtimedata.png" width="50%">
-                 </p>
-
-                 <aside class ="notes">Adam<br>
-                     <ul>
-                         <li>Send data to devices from multiple APIs in "real" time</li>
-                     </ul>
-                 </aside>
-
-
-             </section>
-            <section>
-                <h2>Problem: Data in real time</h2>
-                <p class="fragment fade-right"> !@$!%@# Caching</p>
-                <p class="fragment fade-right"> Can't constantly reload</p>
-                <p class="fragment fade-right"> Must stay "current" over time</p>
-                <p class="fragment fade-right"> Limited or no user interactivity</p>
-
-                <aside class ="notes">Adam<br>
-                    <ul>
-                        <li>Send data to devices from multiple APIs in "real" time</li>
-                    </ul>
-                </aside>
-            </section>
-            <section>
-                <h2>Our Solution?</h2>
-            </section>
-            <section>
-                <h2>Use a websocket!</h2>
-                <p class="fragment fade-right"> Long connection time</p>
-                <p class="fragment fade-right"> Nearly instantaneous communication</p>
-                <p class="fragment fade-right"> Can be shared between devices</p>
-                <p class="fragment fade-right"> Bi-directional</p>
-            </section>
-            <section>
-                <h2>...and most importantly</h2>
-            </section>
-            <section>
-                <h2>HIGHLY Scalable</h2>
-                <p class="fragment fade-right"> (pretty critical for a lot of devices getting a lot of data)</p>
-                <img class="wmata-sign" alt="Websocket" src="img/websocket-flow.png" width="40%">
-
-            </section>
-            <section>
-                <h2>Case Study: AWS IOT Service</h2>
-                <p class="fragment fade-right"> N number of Devices each subscribe to 1 or more "topics"</p>
-                <p class="fragment fade-right"> Drupal subscribes to one or more data sources</p>
-                <p class="fragment fade-right"> Drupal pushes appropriate data to appropriate topic(s)</p>
-                <p class="fragment fade-right"> IOT pushes data to connected device(s)</p>
-            </section>
-            <section>
-                <img class="wmata-sign" alt="AWS Socket Illustration" src="img/sockets.png" width="50%">
-            </section>
-            <section>
-                <img class="wmata-sign" alt="AWS Socket Illustration" src="img/sockets-updated.png" width="50%">
-            </section>
-            <section>
-                <h2>Pretty cool but...</h2>
-                <p class="fragment fade-right"> ...now we have a new problem</p>
-            </section>
-        </section>
-        <!--End Section: Data Transmission-->
-
-        <section>
-            <section>
-                <h2>Device Management</h2>
-            </section>
-            <section>
-                <h2>So Far, Drupal Knows About:</h2>
-                <p class="fragment fade-right"> Data</p>
-                <p class="fragment fade-right"> Content</p>
-            </section>
-            <section>
-                <h2>But!</h2>
-                <p class="fragment fade-right"> That case study only works if Drupal knows about the Devices too</p>
-            </section>
-            <section>
-                <h2>?</h2>
-                <p class="fragment fade-right"> Which device cares about what data?</p>
-                <p class="fragment fade-right"> What format should the data be provided in?</p>
-                <p class="fragment fade-right"> How do you make sure that only your devices are accessing the data?</p>
-            </section>
-            <section>
-                <h2>Which device cares about what data?</h2>
-                <p class="fragment fade-right"> Device Location: DC Metro</p>
-                <p class="fragment fade-right"> What direction do trains travel?</p>
-                <p class="fragment fade-right"> What tracks does this screen cover?</p>
-                <p class="fragment fade-right"> What platform is the device on?</p>
-                <p class="fragment fade-right"> What station is the platform in?</p>
-                <p class="fragment fade-right"> What routes run through that platform and station?</p>
-            </section>
-            <section>
-                <img class="wmata-sign" alt="Example Architecture" src="img/architecture.png" width="70%">
-            </section>
-            <section>
-                <h2>Create "Content" Types</h2>
-                <p class="fragment fade-right"> Entity references provide context</p>
-                <p class="fragment fade-right"> Metadata can be used in reports</p>
-                <p class="fragment fade-right"> UX bonus: re-use this structure for message / data placement</p>
-            </section>
-            <section>
-                <h2>Caution:</h2>
-                <p class="fragment fade-right"> Fully boostrapping Drupal during parsing == slow</p>
-                <p class="fragment fade-right"> Cache!</p>
-            </section>
-            <section>
-                <h2>What format should the data be provided in?</h2>
-                <p class="fragment fade-right"> What size screen?</p>
-                <p class="fragment fade-right"> What IP address?</p>
-                <p class="fragment fade-right"> What direction is the screen facing?</p>
-                <p class="fragment fade-right"> What language should the device display?</p>
-            </section>
-            <section>
-                <h2>How do you make sure that only your devices are accessing the data</h2>
-                <p class="fragment fade-right"> Whitelist your system</p>
-                <p class="fragment fade-right"> Make sure your service requires authentication from devices</p>
-                <p class="fragment fade-right"> Require TFA for user access</p>
-                <p class="fragment fade-right"> (let's talk more about this)</p>
-            </section>
-        </section>
-                
-        <section>
-            <section>
-                <h2>Security</h2>
-                <p class="fragment fade-right"> You just created a real device in the real world!</p>
-                <p class="fragment fade-right"> And everyone wants to hack it</p>
-                <p class="fragment fade-right">
-                    <img  class="wmata-sign" alt="Map of WMATA Subway System" src="img/bullseye.png" width="20%">
-                </p>
-            </section>
-            <section>
-                <h2>Hacking the Usual Suspects</h2>
-                <p class="fragment fade-right"> Webserver</p>
-                <p class="fragment fade-right"> Drupal</p>
-                <p class="fragment fade-right"> Websocket</p>
-                <p class="fragment fade-right"> Physical Devices</p>
-                <p class="fragment fade-right"> ...and most terrifying: Source Data</p>
-            </section>
-            <section>
-                <h2>Webserver and Drupal</h2>
-                <p class="fragment fade-right"> LOTS of best practices here</p>
-                <p class="fragment fade-right"> Read the interwebs</p>
-                <p class="fragment fade-right"> Watch Drupalcon sessions</p>
-            </section>
-            <section>
-                <h2>Websocket</h2>
-                <p class="fragment fade-right"> Be smart about what you use</p>
-                <p class="fragment fade-right"> Services like Amazon IOT have authentication built in</p>
-            </section>
-            <section>
-                <h2>Give your hardware some love</h2>
-                <p class="fragment fade-right"> Embedded devices have poor security track-records</p>
-                <p class="fragment fade-right"> Often ship with default passwords.</p>
-                <p class="fragment fade-right"> Restrict physical access</p>
-            </section>
-
-            <section>
-                <h2>You hardware isn't just hardware. <br /><span class="fragment fade-right">It's also running software.</span></h2>
-                <p class="fragment fade-right"> Make sure that the vendor releases patches in a timely manner</p>
-                <p class="fragment fade-right"> Stay on top of firmware updates</p>
-                <p class="fragment fade-right"> Plan for upgrades when any installed software has a published vulnerability</p>
-            </section>
-
-            <section>
-                <h2> If it can connect to the interwebs you can hack it</h2>
-                <p class="fragment fade-right">Even a TV can be hacked <br />
-                    <img  class="wmata-sign" alt="TV Set" src="img/tv.png" width="20%">
-                </p>
-            </section>
-            <section>
-                <h2>Source Data</h2>
-                <p class="fragment fade-right"> Guard the back door!!!!</p>
-                <p class="fragment fade-right"> MUST be as secure (or more so) than the rest of the stack</p>
-                <p class="fragment fade-right"> Validate your data</p>
-                <p class="fragment fade-right"> Audit your data</p>
-            </section>
-            <section>
-                <h2>It's 2017 use SSL everywhere</h2>
-                <p class="fragment fade-right"> No one wants a man in the middle attack</p>
-                <p class="fragment fade-right"> Great way to vandalize your sign</p>
-                <p class="fragment fade-right"> It's a go live blocker</p>
-                <p class="fragment fade-right">
-                    <img  class="wmata-sign" alt="TV Set" src="img/shall-not-pass.gif" width="40%">
-                </p>
-            </section>
-
-            <section>
-                <h2>General Best Practices</h2>
-                <p class="fragment fade-right"> Prevent public IPs from logging in </p>
-                <p class="fragment fade-right"> TFA</p>
-                <p class="fragment fade-right"> Saml/SSO</p>
-                <p class="fragment fade-right"> Lock down user accounts</p>
-            </section>
-
-            <section>
-                <h2> It's not paranoia if they are really out to get you</h2>
-                <p class="fragment fade-right">In case you were wondering: they are.</p>
-            </section>
-
-            <section>
-                <h2> Lastly...</h2>
-                <p class="fragment fade-right">You can take all these precautions and still have issues</p>
-                <p class="fragment fade-right">Be prepared for DOS and other attacks</p>
-                <p class="fragment fade-right">Hacking isn't just taking over a device</p>
-                <p class="fragment fade-right">(sometimes bringing down a web server is just as effective as controlling it)</p>
-            </section>
-
-        </section>
-        <!--End Section: Security-->
-
-
-        <section>
-            <section>
-                <h2>Fault Tolerance</h2>
-                <p class="fragment fade-right">Something goes wrong on a webpage you reload</p>
-                <p class="fragment fade-right">Don't give it a second thought</p>
-                <p class="fragment fade-right">When a sign shows a blue screen of death people notice</p>
-            </section>
-            <section>
-                <h2>What does failure look like?</h2>
-                <img alt="Blue Screen of Death on a sign" src="img/bluescreen1.jpg" width="70%">
-            </section>
-            <section>
-                <img alt="Blue Screen of Death on a sign" src="img/bluescreen2.jpg" width="70%">
-            </section>
-
-            <section>
-                <img alt="Blue Screen of Death on a sign" src="img/bluescreen3.jpg" width="70%">
-            </section>
-
-            <section>
-                <h2>Exception Handling</h2>
-                <p class="fragment fade-right">Graceful Degradation</p>
-            </section>
-
-            <section>
-                <h2>At somepoint you will have a problem that you can't handle</h2>
-                <img alt="Blue Screen of Death on a sign" src="img/google-chrome-aw-snap.jpg" width="70%">
-                <p class="fragment fade-right">
-            </section>
-
-            <section>
-                <h2>Custom extensions to auto reload failed tabs </h2>
-                <img alt="Oh no you didn't chrome extension" src="img/oh-no.png" width="40%">
-                <p class="fragment fade-right"><a href="https://chrome.google.com/webstore/detail/oh-no-you-didnt/acdablfhjbhkjbcifldncdkmlophfgda?hl=en">Oh no you didn't Extension</a></p>
-                <p class="fragment fade-right">Good starting point for a custom extension</p>
-            </section>
-        </section>
-        <!--End Section: Fault tolerance-->
-        
-
-        <section>
-            <section>
-                <h2>Support</h2>
-                <p class="fragment fade-right">Troubleshooting a complex stack with API integrations is hard</p>
-                <p class="fragment fade-right">
-                    <img  class="wmata-sign" alt="IT Crowd image of tech support with fire" src="img/support.gif" width="40%">
-                </p>
-
-            </section>
-
-            <section>
-                <h2>Let's pretend you didn't see this presentation</h2>
-                <p class="fragment fade-right">Devices use Angular to poll various APIs in real time (directly)</p>
-                <p class="fragment fade-right">You didn't load test any of your webservers befor launch</p>
-                <p class="fragment fade-right">You add 20 more screens in production</p>
-                <p class="fragment fade-right">
-                    <img alt="10 Screens polling" src="img/polling-10.png" width="40%">
-                </p>
-            </section>
-
-            <section>
-                <h2>All of your screens lose data simultanesouly</h2>
-                <p class="fragment fade-right">How do you troubleshoot?</p>
-                <p class="fragment fade-right">Did a server powering one of the APIs crash?</p>
-                <p class="fragment fade-right">Did the webserver crash?</p>
-            </section>
-
-
-
-            <section>
-                <h2>Understanding the Architecture</h2>
-                <p class="fragment fade-right">Make sure support knows what those APIs are.</p>
-                <p class="fragment fade-right">Make sure support knows the warnings signs and symptoms of problems.</p>
-            </section>
-
-
-            <section>
-                <h2>Need escalation plans for outages</h2>
-                <p class="fragment fade-right">Who owns which API</p>
-                <p class="fragment fade-right">Who you gonna call</p>
-            </section>
-
-            <section>
-                <h2>Know what you can and can't fix</h2>
-                <p class="fragment fade-right">Figure this out before something bad happens</p>
-                <p class="fragment fade-right">(that includes testing before hand)</p>
-            </section>
-
-            <section>
-                <h2>Load test before scaling up</h2>
-                <p class="fragment fade-right">Mirror the production hardware</p>
-                <p class="fragment fade-right">Including any dependent APIs</p>
-
-            </section>
-            <section>
-                <h2>And remember!</h2>
-                <p class="fragment fade-right">Your source APIs may not have as robust of a workflow as your main site</p>
-                <p class="fragment fade-right">Make sure the owners of those systems know not to make changes without notifying your dev team</p>
-                <p class="fragment fade-right">
-                    <img alt="I don't always test. but when I do, I do it in production." src="img/test_in_prod.jpg" width="20%">
-                </p>
-
-            </section>
-        </section>
-        <!--End Section: Support-->
-
-        <section>
-            <section>
-                <h2>Case Studies</h2>
-                <p class="fragment fade-right">1: 10k+ devices, mostly static data</p>
-                <p class="fragment fade-right">2: < 5k devices, real-time data</p>
-            </section>
-            <section>
-                <h2>Case Study 1: Retail Store Displays</h2>
-                <p class="fragment fade-right">Devices: Video Walls, TVs, Tablets, Phones</p>
-                <p class="fragment fade-right">Content: Media for Promotion & Marketing</p>
-            </section>
-            <section>
-                <h2>Challenges</h2>
-                <p class="fragment fade-right">Store locations are distributed geographically</p>
-                <p class="fragment fade-right">Tens of thousands of devices</p>
-                <p class="fragment fade-right">Significant variance in display sizes</p>
-            </section>
-            <section>
-                <h2>Approach</h2>
-                <p class="fragment fade-right">Drupal manages all content</p>
-                <p class="fragment fade-right">Drupal manages all devices</p>
-                <p class="fragment fade-right">Google GCM Push Model</p>
-                <p class="fragment fade-right">Offline content playback</p>
-            </section>
-            <section>
-                <h2>Advantages</h2>
-                <p class="fragment fade-right">Central place to create content and manage devices</p>
-                <p class="fragment fade-right">Reuse content and/or custom content per device</p>
-                <p class="fragment fade-right">Internet connectivity isn't constantly required</p>
-                <p class="fragment fade-right">System is massively scalable</p>
-                <p class="fragment fade-right">UX for content managers</p>
-            </section>
-            <section>
-                <h2>Case Study 2: Mass Transit Displays</h2>
-                <p class="fragment fade-right">Devices: Digital Screens</p>
-                <p class="fragment fade-right">Content: Arrival data, messaging / emergency communication</p>
-            </section>
-            <section>
-                <h2>Challenges</h2>
-                <p class="fragment fade-right">Real-time data across thousands of devices</p>
-                <p class="fragment fade-right">Internet & websocket connectivity</p>
-                <p class="fragment fade-right">Error handling & recovery</p>
-                <p class="fragment fade-right">On-demand messaging</p>
-                <p class="fragment fade-right">Performance</p>
-            </section>
-            <section>
-                <h2>Approach</h2>
-                <p class="fragment fade-right">Arrivals (and other) data parsed by Drupal</p>
-                <p class="fragment fade-right">Drupal content for messaging</p>
-                <p class="fragment fade-right">Amazon IOT Websocket Push Model</p>
-                <p class="fragment fade-right">React front end</p>
-                <p class="fragment fade-right">Inventory of Drupal assets to speed parsing</p>
-            </section>
-            <section>
-                <h2>Advantages</h2>
-                <p class="fragment fade-right">Right sized targeted messaging</p>
-                <p class="fragment fade-right">Arrival data changes on screen within 5-8 seconds</p>
-                <p class="fragment fade-right">System is massively scalable</p>
-                <p class="fragment fade-right">UX for content managers</p>
-            </section>
-        </section>
-        <!--End Section: Case Studies-->
-
-        <section>
-            <section>
-                <h2>Wrap Up</h2>
-                <p class="fragment fade-right"> Why Drupal is a good idea for signs!</p>
-                <p class="fragment fade-right"> A few techniques to use</p>
-                <p class="fragment fade-right"> A couple of case studies on how we used them</p>
-            </section>
-        </section>
-        <!--End Section: Wrap Up-->
-
-        <section>
-            <h2>Questions?</h2>
-            <p class="fragment fade-right"><a href="https://events.drupal.org/baltimore2017/sessions/beyond-websites-using-drupal-digital-signs">Leave us some feedback!</a></p>
-        </section>
-
-        <section>
-            <h2>Friday sprint reminder slide</h2>
-            <p class="fragment fade-right">DA asked us to include this.</p>
-        </section>
-
-        <section>Thanks!</section>
-
-        <section>
-            <h2>Resources</h2>
+          <section>
+            <h2>Why do we use Drupal to manage content again?</h2>
+            <p class="fragment fade-right"> Content Modeling</p>
+            <p class="fragment fade-right"> Access Controls & Permissions</p>
+            <p class="fragment fade-right"> Revisioning</p>
+            <p class="fragment fade-right"> Translations</p>
+            <p class="fragment fade-right">Reproducing this elsewhere is expensive</p>
+
+            <aside class ="notes">Adam<br>
+              <ul>
+                <li>Content Modeling</li>
+                <li>Access Controls & Permissions</li>
+                <li>Revisioning</li>
+                <li>Translations</li>
+                <li>Reproducing this elsewhere is expensive</li>
+              </ul>
+            </aside>
+          </section>
+
+          <section>
+            <h2>Drupal lets non dev mortals edit the web</h2>
+
+            <p class="fragment fade-left">
+              <img alt="Drupal Authoring example" src="img/drupal_authoring.png" width="50%">
+            </p>
+          </section>
+
+
+          <section>
+            <h2>Content Model Example: <span class="fragment fade-right">DC Metro!</span></h2>
+          </h2>
+
+          <div class="wmata-left">
+            <img  class="wmata-sign" alt="Map of WMATA Subway System" src="img/wmata_map.png" width="60%">
+          </div>
+
+          <div class="wmata-right">
+            <p class="fragment fade-right"> <strong>Lines:</strong> Red, Blue, Yellow, Green</p>
+            <p class="fragment fade-right"> <strong>Line Direction:</strong> Shady Grove or  Glenmont</p>
+            <p class="fragment fade-right"> <strong>Stations:</strong> Metro Center, Smithsonian, Farragut North</p>
+            <p class="fragment fade-right"> <strong>Platforms:</strong> Single platform can service Mutiple lines.</p>
+          </div>
+
+          <aside class ="notes">Adam<br>
             <ul>
-                Places for Websockets as a Service
-                <li><a href="http://docs.aws.amazon.com/iot/latest/developerguide/protocols.html#mqtt-ws">AWS IOT</a></li>
-                <li><a href="https://www.pubnub.com/">Pubnub</a></li>
-                <li><a href="https://pusher.com/">Pusher</a></li>
+              <li> <strong>Lines:</strong> Red, Blue, Yellow, Green</li>
+              <li> <strong>Line Direction:</strong> Shady Grove or  Glenmont</li>
+              <li> <strong>Stations:</strong> Metro Center, Smithsonian, Farragut North</li>
+              <li> <strong>Platforms:</strong> Single platform can service Mutiple lines.</li>
             </ul>
+          </aside>
         </section>
+
+        <section>
+          <h2>D8 Makes it easy to syndicate this data using webservices</h2>
+          <p class="fragment fade-right"> Build your own API</p>
+
+          <aside class ="notes">Adam<br>
+            <ul>
+              <li>Build your own API.</li>
+            </ul>
+          </aside>
+        </section>
+      </section>
+      <!--End Section: why drupal?-->
+
+
+      <section>
+        <section>
+          <h2>Working with External Data and Feeds</h2>
+          <p class="fragment fade-right"> Drupal isn't the source of all things.</p>
+          <p class="fragment fade-right">
+            <img alt="Amanda Seyfried from mean girls gasping" src="img/gasp.gif" width="40%">
+          </p>
+
+          <p class="fragment fade-right"> It can still help process outside data.</p>
+
+          <aside class ="notes">Adam<br>
+            <ul>
+              <li>Drupal isn't the source of all things.</li>
+              <li>It can still help process outside data.</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section>
+          <h2>What kind of "external data" from outside APIs:  </h2>
+          <p class="fragment fade-right">
+            Pinterest, Facebook, Twitter <br />
+            <img alt="Facebooks" src="img/logos/facebook.png" width="100">
+            <img alt="Pinterest" src="img/logos/pinterest.png" width="100">
+            <img alt="Twitter" src="img/logos/twitter.png" width="100">
+          </p>
+
+          <aside class ="notes">Adam<br>
+            <ul>
+              <li>Pinterest, Facebook, Twitter.</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section>
+          <p class="fragment fade-right">
+            <h2>Train Arrivals</h2>
+            <img alt="Train Arrivals" src="img/train-arrivals.jpg" width="60%">
+          </p>
+        </section>
+
+        <section>
+          <h2>Weather</h2>
+          <img alt="Weather" src="img/weather.jpg" width="60%">
+        </section>
+
+        <section>
+          <h2> Stock Quotes</h2>
+          <img alt="Stock Quotes" src="img/stock-quotes.jpg" width="60%"></p>
+        </section>
+
+        <section>
+          <h2>Top News</h2>
+          <img alt="Top News" src="img/top-news.jpg" width="60%"></p>
+        </section>
+
+        <section>
+          <h2>Just do it on the client side? <span class="fragment fade-right">Nope.</span> </h2>
+          <p class="fragment fade-right"> Api Rate Limiting </p>
+          <p class="fragment fade-right"> Security/Credentials</p>
+          <p class="fragment fade-right"> Client processing introduces inconsistencies.</p>
+
+          <aside class ="notes">Adam<br>
+            <ul>
+              <li>Api Rate Limiting</li>
+              <li>Security/Credentials</li>
+              <li>Client processing introduces inconsistencies</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section>
+          <h2>Why not just write a Symfony app??</h2>
+          <p class="fragment fade-right">
+            <img class="wmata-sign" alt="Hater Gonna Hate" src="img/cranks.jpg" width="40%">
+          </p>
+        </section>
+
+        <section>
+          <h2>Context is everything</h2>
+          <p class="fragment fade-right"> Remember that Drupal content model?</p>
+          <p class="fragment fade-right"> We can use it to to process that data!</p>
+
+          <aside class ="notes">Adam<br>
+            <ul>
+              <li> Remember that drupal content model?</li>
+              <li>We can use it to to process that data!</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section>
+          <h2>Back to our train example...</h2>
+          <p class="fragment fade-right"> Say we have an arrival feed.</p>
+          <p class="fragment fade-right"> Can process updates for specific signs</p>
+          <p class="fragment fade-right"> Let the signs know that something has changed</p>
+          <p class="fragment fade-right"> Can't do that with a symfony app!</p>
+          <p class="fragment fade-right"> Need to reinvent the wheel!</p>
+
+          <aside class ="notes">Adam<br>
+            <ul>
+              <li> Say we have an arrival feed</li>
+              <li>Can process updates for specific signs</li>
+              <li>Let the signs know that something has changed</li>
+              <li>Can't do that with a symfony app!</li>
+              <li>Need to reinvent the wheel!</li>
+            </ul>
+          </aside>
+
+        </section>
+
+        <section>
+          <h2>How does this actually work?</h2>
+          <p class="fragment fade-right"> Start with a drush command</p>
+          <p class="fragment fade-right"> Store the credentials in Drupal</p>
+          <p class="fragment fade-right"> Sprinkle in some caching to enforce rate limits</p>
+          <p class="fragment fade-right"> Parse and normalize data</p>
+
+          <aside class ="notes">Adam<br>
+            <ul>
+              <li>Start with a drush command</li>
+              <li>Store the credentials in Drupal</li>
+              <li>Let the signs know that something has changed</li>
+              <li>Sprinkle in some caching to enforce rate limits</li>
+              <li>Parse and normalize data</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section>
+          <h2>How to loop your drush command when all you have is cron?</h2>
+          <p class="fragment fade-right"> Use cron to start the script on a regular interval (e.g. 1 minute)</p>
+          <p class="fragment fade-right"> Pass iterations as a drush parameter into your command</p>
+          <p class="fragment fade-right"> Write a loop within the script</p>
+          <p class="fragment fade-right"> Repeat</p>
+
+          <aside class ="notes">Adam<br>
+            <ul>
+              <li>Use cron to start the script on a regular interval (e.g. 1 minute)</li>
+              <li>Pass iterations as a drush parameter into your command</li>
+              <li>Write a loop within the script</li>
+              <li>Repeat</li>
+            </ul>
+          </aside>
+        </section>
+        <section>
+          <h2>DANGER!</h2>
+          <p class="fragment fade-right"> This assumes that your script can run very fast</p>
+          <p class="fragment fade-right"> Optimize and cache accordingly</p>
+
+          <aside class ="notes">Adam<br>
+            <ul>
+              <li> This assumes that your script can run very fast</li>
+              <li> Optimize and cache accordingly</li>
+            </ul>
+          </aside>
+        </section>
+
+      </section>
+      <!--End Section: consuming feeds-->
+
+
+      <section>
+        <section>
+          <h2>Data Transmission</h2>
+          <p class="fragment fade-right"> Getting information from Drupal to your device</p>
+        </section>
+
+        <section>
+          <h2>Approaches</h2>
+          <img class="wmata-sign" alt="Push and Pull" src="img/push-pull.jpg" width="40%">
+        </section>
+
+        <section>
+          <h2>Pull suks</h2>
+          <p class="fragment fade-right"> High Traffic</p>
+          <p class="fragment fade-right"> Load on devices</p>
+          <p class="fragment fade-right"> Load on servers</p>
+          <p class="fragment fade-right"> Can mimic DDOS</p>
+
+          <aside class ="notes">Adam<br>
+            <ul>
+              <li>High Traffic</li>
+              <li>Load on devices</li>
+              <li>Load on servers</li>
+              <li>Can mimic DDOS</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section>
+          <h2>The dream</h2>
+          <p class="fragment fade-right"> Send data to devices from multiple APIs in "real" time</p>
+          <p class="fragment fade-right">
+           <img class="wmata-sign" alt="Real time flow" src="img/realtimedata.png" width="50%">
+         </p>
+
+         <aside class ="notes">Adam<br>
+           <ul>
+             <li>Send data to devices from multiple APIs in "real" time</li>
+           </ul>
+         </aside>
+
+
+       </section>
+       <section>
+        <h2>Problem: Data in real time</h2>
+        <p class="fragment fade-right"> !@$!%@# Caching</p>
+        <p class="fragment fade-right"> Can't constantly reload</p>
+        <p class="fragment fade-right"> Must stay "current" over time</p>
+        <p class="fragment fade-right"> Limited or no user interactivity</p>
+
+        <aside class ="notes">Adam<br>
+          <ul>
+            <li>Send data to devices from multiple APIs in "real" time</li>
+          </ul>
+        </aside>
+      </section>
+      <section>
+        <h2>Our Solution?</h2>
+      </section>
+      <section>
+        <h2>Use a websocket!</h2>
+        <p class="fragment fade-right"> Long connection time</p>
+        <p class="fragment fade-right"> Nearly instantaneous communication</p>
+        <p class="fragment fade-right"> Can be shared between devices</p>
+        <p class="fragment fade-right"> Bi-directional</p>
+      </section>
+      <section>
+        <h2>...and most importantly</h2>
+      </section>
+      <section>
+        <h2>HIGHLY Scalable</h2>
+        <p class="fragment fade-right"> (pretty critical for a lot of devices getting a lot of data)</p>
+        <img class="wmata-sign" alt="Websocket" src="img/websocket-flow.png" width="40%">
+
+      </section>
+      <section>
+        <h2>Case Study: AWS IOT Service</h2>
+        <p class="fragment fade-right"> N number of Devices each subscribe to 1 or more "topics"</p>
+        <p class="fragment fade-right"> Drupal subscribes to one or more data sources</p>
+        <p class="fragment fade-right"> Drupal pushes appropriate data to appropriate topic(s)</p>
+        <p class="fragment fade-right"> IOT pushes data to connected device(s)</p>
+      </section>
+      <section>
+        <img class="wmata-sign" alt="AWS Socket Illustration" src="img/sockets.png" width="50%">
+      </section>
+      <section>
+        <img class="wmata-sign" alt="AWS Socket Illustration" src="img/sockets-updated.png" width="50%">
+      </section>
+      <section>
+        <h2>Pretty cool but...</h2>
+        <p class="fragment fade-right"> ...now we have a new problem</p>
+      </section>
+    </section>
+    <!--End Section: Data Transmission-->
+
+    <section>
+      <section>
+        <h2>Device Management</h2>
+      </section>
+      <section>
+        <h2>So Far, Drupal Knows About:</h2>
+        <p class="fragment fade-right"> Data</p>
+        <p class="fragment fade-right"> Content</p>
+      </section>
+      <section>
+        <h2>But!</h2>
+        <p class="fragment fade-right"> That case study only works if Drupal knows about the Devices too</p>
+      </section>
+      <section>
+        <h2>?</h2>
+        <p class="fragment fade-right"> Which device cares about what data?</p>
+        <p class="fragment fade-right"> What format should the data be provided in?</p>
+        <p class="fragment fade-right"> How do you make sure that only your devices are accessing the data?</p>
+      </section>
+      <section>
+        <h2>Which device cares about what data?</h2>
+        <p class="fragment fade-right"> Device Location: DC Metro</p>
+        <p class="fragment fade-right"> What direction do trains travel?</p>
+        <p class="fragment fade-right"> What tracks does this screen cover?</p>
+        <p class="fragment fade-right"> What platform is the device on?</p>
+        <p class="fragment fade-right"> What station is the platform in?</p>
+        <p class="fragment fade-right"> What routes run through that platform and station?</p>
+      </section>
+      <section>
+        <img class="wmata-sign" alt="Example Architecture" src="img/architecture.png" width="70%">
+      </section>
+      <section>
+        <h2>Create "Content" Types</h2>
+        <p class="fragment fade-right"> Entity references provide context</p>
+        <p class="fragment fade-right"> Metadata can be used in reports</p>
+        <p class="fragment fade-right"> UX bonus: re-use this structure for message / data placement</p>
+      </section>
+      <section>
+        <h2>Caution:</h2>
+        <p class="fragment fade-right"> Fully boostrapping Drupal during parsing == slow</p>
+        <p class="fragment fade-right"> Cache!</p>
+      </section>
+      <section>
+        <h2>What format should the data be provided in?</h2>
+        <p class="fragment fade-right"> What size screen?</p>
+        <p class="fragment fade-right"> What IP address?</p>
+        <p class="fragment fade-right"> What direction is the screen facing?</p>
+        <p class="fragment fade-right"> What language should the device display?</p>
+      </section>
+      <section>
+        <h2>How do you make sure that only your devices are accessing the data</h2>
+        <p class="fragment fade-right"> Whitelist your system</p>
+        <p class="fragment fade-right"> Make sure your service requires authentication from devices</p>
+        <p class="fragment fade-right"> Require TFA for user access</p>
+        <p class="fragment fade-right"> (let's talk more about this)</p>
+      </section>
+    </section>
+
+    <section>
+      <section>
+        <h2>Security</h2>
+        <p class="fragment fade-right"> You just created a real device in the real world!</p>
+        <p class="fragment fade-right"> And everyone wants to hack it</p>
+        <p class="fragment fade-right">
+          <img  class="wmata-sign" alt="Map of WMATA Subway System" src="img/bullseye.png" width="20%">
+        </p>
+      </section>
+      <section>
+        <h2>Hacking the Usual Suspects</h2>
+        <p class="fragment fade-right"> Webserver</p>
+        <p class="fragment fade-right"> Drupal</p>
+        <p class="fragment fade-right"> Websocket</p>
+        <p class="fragment fade-right"> Physical Devices</p>
+        <p class="fragment fade-right"> ...and most terrifying: Source Data</p>
+      </section>
+      <section>
+        <h2>Webserver and Drupal</h2>
+        <p class="fragment fade-right"> LOTS of best practices here</p>
+        <p class="fragment fade-right"> Read the interwebs</p>
+        <p class="fragment fade-right"> Watch Drupalcon sessions</p>
+      </section>
+      <section>
+        <h2>Websocket</h2>
+        <p class="fragment fade-right"> Be smart about what you use</p>
+        <p class="fragment fade-right"> Services like Amazon IOT have authentication built in</p>
+      </section>
+      <section>
+        <h2>Give your hardware some love</h2>
+        <p class="fragment fade-right"> Embedded devices have poor security track-records</p>
+        <p class="fragment fade-right"> Often ship with default passwords.</p>
+        <p class="fragment fade-right"> Restrict physical access</p>
+      </section>
+
+      <section>
+        <h2>You hardware isn't just hardware. <br /><span class="fragment fade-right">It's also running software.</span></h2>
+        <p class="fragment fade-right"> Make sure that the vendor releases patches in a timely manner</p>
+        <p class="fragment fade-right"> Stay on top of firmware updates</p>
+        <p class="fragment fade-right"> Plan for upgrades when any installed software has a published vulnerability</p>
+      </section>
+
+      <section>
+        <h2> If it can connect to the interwebs you can hack it</h2>
+        <p class="fragment fade-right">Even a TV can be hacked <br />
+          <img  class="wmata-sign" alt="TV Set" src="img/tv.png" width="20%">
+        </p>
+      </section>
+      <section>
+        <h2>Source Data</h2>
+        <p class="fragment fade-right"> Guard the back door!!!!</p>
+        <p class="fragment fade-right"> MUST be as secure (or more so) than the rest of the stack</p>
+        <p class="fragment fade-right"> Validate your data</p>
+        <p class="fragment fade-right"> Audit your data</p>
+      </section>
+      <section>
+        <h2>It's 2017 use SSL everywhere</h2>
+        <p class="fragment fade-right"> No one wants a man in the middle attack</p>
+        <p class="fragment fade-right"> Great way to vandalize your sign</p>
+        <p class="fragment fade-right"> It's a go live blocker</p>
+        <p class="fragment fade-right">
+          <img  class="wmata-sign" alt="TV Set" src="img/shall-not-pass.gif" width="40%">
+        </p>
+      </section>
+
+      <section>
+        <h2>General Best Practices</h2>
+        <p class="fragment fade-right"> Prevent public IPs from logging in </p>
+        <p class="fragment fade-right"> TFA</p>
+        <p class="fragment fade-right"> Saml/SSO</p>
+        <p class="fragment fade-right"> Lock down user accounts</p>
+      </section>
+
+      <section>
+        <h2> It's not paranoia if they are really out to get you</h2>
+        <p class="fragment fade-right">In case you were wondering: they are.</p>
+      </section>
+
+      <section>
+        <h2> Lastly...</h2>
+        <p class="fragment fade-right">You can take all these precautions and still have issues</p>
+        <p class="fragment fade-right">Be prepared for DOS and other attacks</p>
+        <p class="fragment fade-right">Hacking isn't just taking over a device</p>
+        <p class="fragment fade-right">(sometimes bringing down a web server is just as effective as controlling it)</p>
+      </section>
+
+    </section>
+    <!--End Section: Security-->
+
+
+    <section>
+      <section>
+        <h2>Fault Tolerance</h2>
+        <p class="fragment fade-right">Something goes wrong on a webpage you reload</p>
+        <p class="fragment fade-right">Don't give it a second thought</p>
+        <p class="fragment fade-right">When a sign shows a blue screen of death people notice</p>
+
+        <aside class ="notes"> <br>
+          <p class="fragment fade-right">Something goes wrong on a webpage you reload</p>
+          <p class="fragment fade-right">Don't give it a second thought</p>
+          <p class="fragment fade-right">When a sign shows a blue screen of death people notice</p>
+        </aside>
+      </section>
+      <section>
+        <h2>What does failure look like?</h2>
+        <img alt="Blue Screen of Death on a sign" src="img/bluescreen1.jpg" width="70%">
+      </section>
+      <section>
+        <img alt="Blue Screen of Death on a sign" src="img/bluescreen2.jpg" width="70%">
+      </section>
+
+      <section>
+        <img alt="Blue Screen of Death on a sign" src="img/bluescreen3.jpg" width="70%">
+      </section>
+
+      <section>
+        <h2>Exception Handling</h2>
+        <p class="fragment fade-right">Graceful Degradation</p>
+      </section>
+
+      <section>
+        <h2>At somepoint you will have a problem that you can't handle</h2>
+        <img alt="Blue Screen of Death on a sign" src="img/google-chrome-aw-snap.jpg" width="70%">
+        <p class="fragment fade-right">
+        </section>
+
+        <section>
+          <h2>Custom extensions to auto reload failed tabs </h2>
+          <img alt="Oh no you didn't chrome extension" src="img/oh-no.png" width="40%">
+          <p class="fragment fade-right"><a href="https://chrome.google.com/webstore/detail/oh-no-you-didnt/acdablfhjbhkjbcifldncdkmlophfgda?hl=en">Oh no you didn't Extension</a></p>
+          <p class="fragment fade-right">Good starting point for a custom extension</p>
+
+          
+        </section>
+      </section>
+      <!--End Section: Fault tolerance-->
+
+
+      <section>
+        <section>
+          <h2>Support</h2>
+          <p class="fragment fade-right">Troubleshooting a complex stack with API integrations is hard</p>
+          <p class="fragment fade-right">
+            <img  class="wmata-sign" alt="IT Crowd image of tech support with fire" src="img/support.gif" width="40%">
+          </p>
+
+          <aside class ="notes"> <br>
+            <p class="fragment fade-right">Troubleshooting a complex stack with API integrations is hard</p>
+          </aside>
+
+        </section>
+
+        <section>
+          <h2>Let's pretend you didn't see this presentation</h2>
+          <p class="fragment fade-right">Devices use Angular to poll various APIs in real time (directly)</p>
+          <p class="fragment fade-right">You didn't load test any of your webservers befor launch</p>
+          <p class="fragment fade-right">You add 20 more screens in production</p>
+          <p class="fragment fade-right">
+            <img alt="10 Screens polling" src="img/polling-10.png" width="40%">
+          </p>
+
+          <aside class ="notes"> <br>
+            <p class="fragment fade-right">Devices use Angular to poll various APIs in real time (directly)</p>
+            <p class="fragment fade-right">You didn't load test any of your webservers befor launch</p>
+            <p class="fragment fade-right">You add 20 more screens in production</p>
+          </aside>
+        </section>
+
+        <section>
+          <h2>All of your screens lose data simultanesouly</h2>
+          <p class="fragment fade-right">How do you troubleshoot?</p>
+          <p class="fragment fade-right">Did a server powering one of the APIs crash?</p>
+          <p class="fragment fade-right">Did the webserver crash?</p>
+
+          <aside class ="notes"> <br>
+            <p class="fragment fade-right">How do you troubleshoot?</p>
+            <p class="fragment fade-right">Did a server powering one of the APIs crash?</p>
+            <p class="fragment fade-right">Did the webserver crash?</p>
+          </aside>
+        </section>
+
+
+
+        <section>
+          <h2>Understanding the Architecture</h2>
+          <p class="fragment fade-right">Make sure support knows what those APIs are.</p>
+          <p class="fragment fade-right">Make sure support knows the warnings signs and symptoms of problems.</p>
+
+          <aside class ="notes"> <br>
+            <p class="fragment fade-right">Make sure support knows what those APIs are.</p>
+            <p class="fragment fade-right">Make sure support knows the warnings signs and symptoms of problems.</p>
+          </aside>
+        </section>
+
+
+        <section>
+          <h2>Need escalation plans for outages</h2>
+          <p class="fragment fade-right">Who owns which API</p>
+          <p class="fragment fade-right">Who you gonna call</p>
+
+          <aside class ="notes"> <br>
+            <p class="fragment fade-right">Who owns which API</p>
+            <p class="fragment fade-right">Who you gonna call</p>
+          </aside>
+        </section>
+
+        <section>
+          <h2>Know what you can and can't fix</h2>
+          <p class="fragment fade-right">Figure this out before something bad happens</p>
+          <p class="fragment fade-right">(that includes testing before hand)</p>
+
+          <aside class ="notes"> <br>
+            <p class="fragment fade-right">Figure this out before something bad happens</p>
+            <p class="fragment fade-right">(that includes testing before hand)</p>
+          </aside>
+        </section>
+
+        <section>
+          <h2>Load test before scaling up</h2>
+          <p class="fragment fade-right">Mirror the production hardware</p>
+          <p class="fragment fade-right">Including any dependent APIs</p>
+
+          <aside class ="notes"> <br>
+            <p class="fragment fade-right">Mirror the production hardware</p>
+            <p class="fragment fade-right">Including any dependent APIs</p>
+          </aside>
+
+        </section>
+        <section>
+          <h2>And remember!</h2>
+          <p class="fragment fade-right">Your source APIs may not have as robust of a workflow as your main site</p>
+          <p class="fragment fade-right">Make sure the owners of those systems know not to make changes without notifying your dev team</p>
+          <p class="fragment fade-right">
+            <img alt="I don't always test. but when I do, I do it in production." src="img/test_in_prod.jpg" width="20%">
+          </p>
+
+          <aside class ="notes"> <br>
+            <p class="fragment fade-right">Your source APIs may not have as robust of a workflow as your main site</p>
+            <p class="fragment fade-right">Make sure the owners of those systems know not to make changes without notifying your dev team</p>
+          </aside>
+        </section>
+      </section>
+      <!--End Section: Support-->
+
+      <section>
+        <section>
+          <h2>Case Studies</h2>
+          <p class="fragment fade-right">1: 10k+ devices, mostly static data</p>
+          <p class="fragment fade-right">2: < 5k devices, real-time data</p>
+
+          <aside class ="notes"> <br>
+            <p class="fragment fade-right">1: 10k+ devices, mostly static data</p>
+            <p class="fragment fade-right">2: < 5k devices, real-time data</p>
+          </aside>
+        </section>
+        <section>
+          <h2>Case Study 1: Retail Store Displays</h2>
+          <p class="fragment fade-right">Devices: Video Walls, TVs, Tablets, Phones</p>
+          <p class="fragment fade-right">Content: Media for Promotion & Marketing</p>
+
+          <aside class ="notes"> <br>
+            <p class="fragment fade-right">Devices: Video Walls, TVs, Tablets, Phones</p>
+            <p class="fragment fade-right">Content: Media for Promotion & Marketing</p>
+          </aside>
+        </section>
+        <section>
+          <h2>Challenges</h2>
+          <p class="fragment fade-right">Store locations are distributed geographically</p>
+          <p class="fragment fade-right">Tens of thousands of devices</p>
+          <p class="fragment fade-right">Significant variance in display sizes</p>
+
+          <aside class ="notes"> <br>
+            <p class="fragment fade-right">Store locations are distributed geographically</p>
+            <p class="fragment fade-right">Tens of thousands of devices</p>
+            <p class="fragment fade-right">Significant variance in display sizes</p>
+          </aside>
+        </section>
+        <section>
+          <h2>Approach</h2>
+          <p class="fragment fade-right">Drupal manages all content</p>
+          <p class="fragment fade-right">Drupal manages all devices</p>
+          <p class="fragment fade-right">Google GCM Push Model</p>
+          <p class="fragment fade-right">Offline content playback</p>
+
+          <aside class ="notes"> <br>
+            <p class="fragment fade-right">Drupal manages all content</p>
+            <p class="fragment fade-right">Drupal manages all devices</p>
+            <p class="fragment fade-right">Google GCM Push Model</p>
+            <p class="fragment fade-right">Offline content playback</p>
+          </aside>
+        </section>
+        <section>
+          <h2>Advantages</h2>
+          <p class="fragment fade-right">Central place to create content and manage devices</p>
+          <p class="fragment fade-right">Reuse content and/or custom content per device</p>
+          <p class="fragment fade-right">Internet connectivity isn't constantly required</p>
+          <p class="fragment fade-right">System is massively scalable</p>
+          <p class="fragment fade-right">UX for content managers</p>
+
+          <aside class ="notes"> <br>
+            <p class="fragment fade-right">Central place to create content and manage devices</p>
+            <p class="fragment fade-right">Reuse content and/or custom content per device</p>
+            <p class="fragment fade-right">Internet connectivity isn't constantly required</p>
+            <p class="fragment fade-right">System is massively scalable</p>
+            <p class="fragment fade-right">UX for content managers</p>
+          </aside>
+        </section>
+        <section>
+          <h2>Case Study 2: Mass Transit Displays</h2>
+          <p class="fragment fade-right">Devices: Digital Screens</p>
+          <p class="fragment fade-right">Content: Arrival data, messaging / emergency communication</p>
+
+          <aside class ="notes"> <br>
+            <p class="fragment fade-right">Devices: Digital Screens</p>
+            <p class="fragment fade-right">Content: Arrival data, messaging / emergency communication</p>
+          </aside>
+        </section>
+        <section>
+          <h2>Challenges</h2>
+          <p class="fragment fade-right">Real-time data across thousands of devices</p>
+          <p class="fragment fade-right">Internet & websocket connectivity</p>
+          <p class="fragment fade-right">Error handling & recovery</p>
+          <p class="fragment fade-right">On-demand messaging</p>
+          <p class="fragment fade-right">Performance</p>
+
+          <aside class ="notes"> <br>
+            <p class="fragment fade-right">Real-time data across thousands of devices</p>
+            <p class="fragment fade-right">Internet & websocket connectivity</p>
+            <p class="fragment fade-right">Error handling & recovery</p>
+            <p class="fragment fade-right">On-demand messaging</p>
+            <p class="fragment fade-right">Performance</p>
+          </aside>
+        </section>
+        <section>
+          <h2>Approach</h2>
+          <p class="fragment fade-right">Arrivals (and other) data parsed by Drupal</p>
+          <p class="fragment fade-right">Drupal content for messaging</p>
+          <p class="fragment fade-right">Amazon IOT Websocket Push Model</p>
+          <p class="fragment fade-right">React front end</p>
+          <p class="fragment fade-right">Inventory of Drupal assets to speed parsing</p>
+
+          <aside class ="notes"> <br>
+            <p class="fragment fade-right">Arrivals (and other) data parsed by Drupal</p>
+            <p class="fragment fade-right">Drupal content for messaging</p>
+            <p class="fragment fade-right">Amazon IOT Websocket Push Model</p>
+            <p class="fragment fade-right">React front end</p>
+            <p class="fragment fade-right">Inventory of Drupal assets to speed parsing</p>
+          </aside>
+        </section>
+        <section>
+          <h2>Advantages</h2>
+          <p class="fragment fade-right">Right sized targeted messaging</p>
+          <p class="fragment fade-right">Arrival data changes on screen within 5-8 seconds</p>
+          <p class="fragment fade-right">System is massively scalable</p>
+          <p class="fragment fade-right">UX for content managers</p>
+
+          <aside class ="notes"> <br>
+            <p class="fragment fade-right">Right sized targeted messaging</p>
+            <p class="fragment fade-right">Arrival data changes on screen within 5-8 seconds</p>
+            <p class="fragment fade-right">System is massively scalable</p>
+            <p class="fragment fade-right">UX for content managers</p>
+          </aside>
+        </section>
+      </section>
+      <!--End Section: Case Studies-->
+
+      <section>
+        <section>
+          <h2>Wrap Up</h2>
+          <p class="fragment fade-right"> Why Drupal is a good idea for signs!</p>
+          <p class="fragment fade-right"> A few techniques to use</p>
+          <p class="fragment fade-right"> A couple of case studies on how we used them</p>
+
+          <aside class ="notes"> <br>
+            <p class="fragment fade-right"> Why Drupal is a good idea for signs!</p>
+            <p class="fragment fade-right"> A few techniques to use</p>
+            <p class="fragment fade-right"> A couple of case studies on how we used them</p>
+          </aside>
+        </section>
+      </section>
+      <!--End Section: Wrap Up-->
+
+      <section>
+        <h2>Questions?</h2>
+        <p class="fragment fade-right"><a href="https://events.drupal.org/baltimore2017/sessions/beyond-websites-using-drupal-digital-signs">Leave us some feedback!</a></p>
+      </section>
+
+      <section>
+        <h2>Friday sprint reminder slide</h2>
+        <p class="fragment fade-right">DA asked us to include this.</p>
+      </section>
+
+      <section>Thanks!</section>
+
+      <section>
+        <h2>Resources</h2>
+        <ul>
+          Places for Websockets as a Service
+          <li><a href="http://docs.aws.amazon.com/iot/latest/developerguide/protocols.html#mqtt-ws">AWS IOT</a></li>
+          <li><a href="https://www.pubnub.com/">Pubnub</a></li>
+          <li><a href="https://pusher.com/">Pusher</a></li>
+        </ul>
+      </section>
 
     </div>
 
 
     <!-- 2. Create hidden header/footer <div> -->
-        <div id="header">
-            <!--<div id="header-left">HEADER-LEFT</div>-->
-            <!--<div id="header-right">HEADER-RIGHT</div>-->
-            <div id="footer-left">
+    <div id="header">
+      <!--<div id="header-left">HEADER-LEFT</div>-->
+      <!--<div id="header-right">HEADER-RIGHT</div>-->
+      <div id="footer-left">
 
-                <!--<span><img  class="baltimore-logo" alt="Drupalcon Baltimore 2017" src="img/drupalcon-baltimore.svg" width="225"></span>-->
-                <span class="author-title">Adam Weingarten and Mike Madison: Beyond Websites: Using Drupal For Digital Signs </span>
+        <!--<span><img  class="baltimore-logo" alt="Drupalcon Baltimore 2017" src="img/drupalcon-baltimore.svg" width="225"></span>-->
+        <span class="author-title">Adam Weingarten and Mike Madison: Beyond Websites: Using Drupal For Digital Signs </span>
 
-            </div>
+      </div>
 
-            <div id="footer-right">
-                <span id="time"></span>
-                <span><img  class="acquia-logo" alt="Acquia " src="img/acquia.png" width="150"></span>
-            </div>
-        </div>
-</div>
+      <div id="footer-right">
+        <span id="time"></span>
+        <span><img  class="acquia-logo" alt="Acquia " src="img/acquia.png" width="150"></span>
+      </div>
+    </div>
+  </div>
 
 
-<script src="src/reveal/lib/js/head.min.js"></script>
-<script src="src/stopwatch.js"></script>
-<script><!-- Printing and PDF exports -->
-show();
-start();
-</script>
-<script src="src/reveal/js/reveal.js"></script>
-<script>
+  <script src="src/reveal/lib/js/head.min.js"></script>
+  <script src="src/stopwatch.js"></script>
+  <script><!-- Printing and PDF exports -->
+    show();
+    start();
+  </script>
+  <script src="src/reveal/js/reveal.js"></script>
+  <script>
     Reveal.initialize(
-        {
-            history: true,
-            width: 1920,
-            height: 1080,
+    {
+      history: true,
+      width: 1920,
+      height: 1080,
             // Optional reveal.js plugins
             dependencies: [
-                { src: 'src/reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-                { src: 'src/reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-                { src: 'src/reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-                { src: 'src/reveal/plugin/zoom-js/zoom.js', async: true },
-                { src: 'src/reveal/plugin/notes/notes.js', async: true }
+            { src: 'src/reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+            { src: 'src/reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            { src: 'src/reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+            { src: 'src/reveal/plugin/zoom-js/zoom.js', async: true },
+            { src: 'src/reveal/plugin/notes/notes.js', async: true }
             ]
-        }
-    );
-</script>
+          }
+          );
+        </script>
 
-</body>
+  </body>
 </html>
