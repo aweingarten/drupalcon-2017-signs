@@ -83,6 +83,11 @@
                 <img alt="Museum Kiosk" src="img/touchscreen-kiosk.jpg" width="60%">
             </section>
 
+            <section>
+                <h2>Public Transit</h2>
+                <img alt="Train Station Sign" src="img/train-sign.jpg" width="60%">
+            </section>
+
 
             <section>
                 <h2>Why are we really here? <span class="fragment fade-right">Signs!</span></h2>
@@ -235,7 +240,7 @@
 
                 <p class="fragment fade-right"> It can still help process outside data.</p>
 
-                <aside class ="notes">Adam<br>
+                <aside class ="notes">Mike<br>
                     <ul>
                         <li>Drupal isn't the source of all things.</li>
                         <li>It can still help process outside data.</li>
@@ -252,7 +257,7 @@
                     <img alt="Twitter" src="img/logos/twitter.png" width="100">
                 </p>
 
-                <aside class ="notes">Adam<br>
+                <aside class ="notes">Mike<br>
                     <ul>
                         <li>Pinterest, Facebook, Twitter.</li>
                     </ul>
@@ -282,33 +287,11 @@
             </section>
 
             <section>
-                <h2>Just do it on the client side? <span class="fragment fade-right">Nope.</span> </h2>
-                <p class="fragment fade-right"> API Rate Limiting </p>
-                <p class="fragment fade-right"> Security/Credentials</p>
-                <p class="fragment fade-right"> Client processing introduces inconsistencies.</p>
-
-                <aside class ="notes">Adam<br>
-                    <ul>
-                        <li>API Rate Limiting</li>
-                        <li>Security/Credentials</li>
-                        <li>Client processing introduces inconsistencies</li>
-                    </ul>
-                </aside>
-            </section>
-
-            <section>
-                <h2>Why not just write a Symfony app??</h2>
-                <p class="fragment fade-right">
-                    <img class="wmata-sign" alt="Hater Gonna Hate" src="img/cranks.jpg" width="40%">
-                </p>
-            </section>
-
-            <section>
                 <h2>Context is everything</h2>
                 <p class="fragment fade-right"> Remember that Drupal content model?</p>
                 <p class="fragment fade-right"> We can use it to to process that data!</p>
 
-                <aside class ="notes">Adam<br>
+                <aside class ="notes">Mike<br>
                     <ul>
                         <li> Remember that Drupal content model?</li>
                         <li>We can use it to to process that data!</li>
@@ -321,16 +304,12 @@
                 <p class="fragment fade-right"> Say we have an arrival feed.</p>
                 <p class="fragment fade-right"> Can process updates for specific signs</p>
                 <p class="fragment fade-right"> Let the signs know that something has changed</p>
-                <p class="fragment fade-right"> Can't do that with a Symfony app!</p>
-                <p class="fragment fade-right"> Need to reinvent the wheel!</p>
 
-                <aside class ="notes">Adam<br>
+                <aside class ="notes">Mike<br>
                     <ul>
                         <li> Say we have an arrival feed</li>
                         <li>Can process updates for specific signs</li>
                         <li>Let the signs know that something has changed</li>
-                        <li>Can't do that with a Symfony app!</li>
-                        <li>Need to reinvent the wheel!</li>
                     </ul>
                 </aside>
 
@@ -343,7 +322,7 @@
                 <p class="fragment fade-right"> Sprinkle in some caching to enforce rate limits</p>
                 <p class="fragment fade-right"> Parse and normalize data</p>
 
-                <aside class ="notes">Adam<br>
+                <aside class ="notes">Mike<br>
                     <ul>
                         <li>Start with a Drush command</li>
                         <li>Store the credentials in Drupal</li>
@@ -361,7 +340,7 @@
                 <p class="fragment fade-right"> Write a loop within the script</p>
                 <p class="fragment fade-right"> Repeat</p>
 
-                <aside class ="notes">Adam<br>
+                <aside class ="notes">Mike<br>
                     <ul>
                         <li>Use cron to start the script on a regular interval (e.g. 1 minute)</li>
                         <li>Pass iterations as a Drush parameter into your command</li>
@@ -375,7 +354,7 @@
                 <p class="fragment fade-right"> This assumes that your script can run very fast</p>
                 <p class="fragment fade-right"> Optimize and cache accordingly</p>
 
-                <aside class ="notes">Adam<br>
+                <aside class ="notes">Mike<br>
                     <ul>
                         <li> This assumes that your script can run very fast</li>
                         <li> Optimize and cache accordingly</li>
@@ -431,14 +410,15 @@
             <section>
                 <h2>Problem: Data in real time</h2>
                 <p class="fragment fade-right"> !@$!%@# Caching</p>
-                <p class="fragment fade-right"> Can't constantly reload</p>
                 <p class="fragment fade-right"> Must stay "current" over time</p>
                 <p class="fragment fade-right"> Limited or no user interactivity</p>
+                <p class="fragment fade-right"> (can't constantly reload)</p>
 
                 <aside class ="notes">Adam<br>
-                    <ul>
-                        <li>Send data to devices from multiple APIs in "real" time</li>
-                    </ul>
+                    <p class="fragment fade-right"> !@$!%@# Caching</p>
+                    <p class="fragment fade-right"> Must stay "current" over time</p>
+                    <p class="fragment fade-right"> Limited or no user interactivity</p>
+                    <p class="fragment fade-right"> Can't constantly reload</p>
                 </aside>
             </section>
             <section>
@@ -452,6 +432,7 @@
                 <p class="fragment fade-right"> Bi-directional</p>
 
                 <aside class ="notes">Adam<br>
+                Explain what a websocket is!
                     <ul>
                         <li class="fragment fade-right"> Long connection time</li>
                         <li class="fragment fade-right"> Nearly instantaneous communication</li>
@@ -476,7 +457,7 @@
                 <p class="fragment fade-right"> Drupal pushes appropriate data to appropriate topic(s)</p>
                 <p class="fragment fade-right"> IOT pushes data to connected device(s)</p>
 
-                <aside class ="notes">Adam<br>
+                <aside class ="notes">Mike<br>
                     <ul>
                         <li> N number of Devices each subscribe to 1 or more "topics"</li>
                         <li> Drupal subscribes to one or more data sources</li>
@@ -507,7 +488,7 @@
                 <h2>So Far, Drupal Knows About:</h2>
                 <p class="fragment fade-right"> Data</p>
                 <p class="fragment fade-right"> Content</p>
-                <aside class ="notes">Adam<br>
+                <aside class ="notes">Mike<br>
                     <ul>
                         <li> Data</li>
                         <li> Content</li>
@@ -517,7 +498,7 @@
             <section>
                 <h2>But!</h2>
                 <p class="fragment fade-right"> That case study only works if Drupal knows about the Devices too</p>
-                <aside class ="notes">Adam<br>
+                <aside class ="notes">Mike<br>
                     <ul>
                         <li> That case study only works if Drupal knows about the Devices too</li>
                     </ul>
@@ -529,7 +510,7 @@
                 <p class="fragment fade-right"> What format should the data be provided in?</p>
                 <p class="fragment fade-right"> How do you make sure that only your devices are accessing the data?</p>
 
-                <aside class ="notes">Adam<br>
+                <aside class ="notes">Mike<br>
                     <ul>
                         <li> Which device cares about what data?</li>
                         <li> What format should the data be provided in?</li>
@@ -546,7 +527,7 @@
                 <p class="fragment fade-right"> What station is the platform in?</p>
                 <p class="fragment fade-right"> What routes run through that platform and station?</p>
 
-                <aside class ="notes">Adam<br>
+                <aside class ="notes">Mike<br>
                     <ul>
                         <li> Device Location: DC Metro</li>
                         <li> What direction do trains travel?</li>
@@ -566,7 +547,7 @@
                 <p class="fragment fade-right"> Metadata can be used in reports</p>
                 <p class="fragment fade-right"> UX bonus: re-use this structure for message / data placement</p>
 
-                <aside class ="notes">Adam<br>
+                <aside class ="notes">Mike<br>
                     <ul>
                         <li> Entity references provide context</li>
                         <li> Metadata can be used in reports</li>
@@ -579,7 +560,7 @@
                 <p class="fragment fade-right"> Fully boostrapping Drupal during parsing == slow</p>
                 <p class="fragment fade-right"> Cache!</p>
 
-                <aside class ="notes">Adam<br>
+                <aside class ="notes">Mike<br>
                     <ul>
                         <li> Fully boostrapping Drupal during parsing == slow</li>
                         <li> Cache</li>
@@ -593,7 +574,7 @@
                 <p class="fragment fade-right"> What direction is the screen facing?</p>
                 <p class="fragment fade-right"> What language should the device display?</p>
 
-                <aside class ="notes">Adam<br>
+                <aside class ="notes">Mike<br>
                     <ul>
                         <li> What size screen?</li>
                         <li> What IP address?</li>
@@ -609,7 +590,7 @@
                 <p class="fragment fade-right"> Require TFA for user access</p>
                 <p class="fragment fade-right"> (let's talk more about this)</p>
 
-                <aside class ="notes">Adam<br>
+                <aside class ="notes">Mike<br>
                     <ul>
                         <li> Whitelist your system</li>
                         <li> Make sure your service requires authentication from devices</li>
@@ -637,48 +618,8 @@
                     </ul>
                 </aside>
             </section>
-            <section>
-                <h2>Hacking the Usual Suspects</h2>
-                <p class="fragment fade-right"> Webserver</p>
-                <p class="fragment fade-right"> Drupal</p>
-                <p class="fragment fade-right"> Websocket</p>
-                <p class="fragment fade-right"> Physical Devices</p>
-                <p class="fragment fade-right"> ...and most terrifying: Source Data</p>
-
-                <aside class ="notes">Adam<br>
-                    <ul>
-                        <li> Webserver</li>
-                        <li> Drupal</li>
-                        <li> Websocket</li>
-                        <li> Physical Devices</li>
-                        <li> ...and most terrifying: Source Data</li>
-                    </ul>
-                </aside>
-            </section>
-            <section>
-                <h2>Webserver and Drupal</h2>
-                <p class="fragment fade-right"> LOTS of best practices here</p>
-                <p class="fragment fade-right"> Read the interwebs</p>
-                <p class="fragment fade-right"> Watch Drupalcon sessions</p>
-                <aside class ="notes">Adam<br>
-                    <ul>
-                        <li> LOTS of best practices here</li>
-                        <li> Read the interwebs</li>
-                        <li> Watch Drupalcon sessions</li>
-                    </ul>
-                </aside>
-            </section>
-            <section>
-                <h2>Websocket</h2>
-                <p class="fragment fade-right"> Be smart about what you use</p>
-                <p class="fragment fade-right"> Services like Amazon IOT have authentication built in</p>
-                <aside class ="notes">Adam<br>
-                    <ul>
-                        <li> Be smart about what you use</li>
-                        <li> Services like Amazon IOT have authentication built in</li>
-                    </ul>
-                </aside>
-            </section>
+            
+            
             <section>
                 <h2>Give your hardware some love</h2>
                 <p class="fragment fade-right"> Embedded devices have poor security track-records</p>
@@ -755,46 +696,12 @@
             </section>
 
             <section>
-                <h2>General Best Practices</h2>
-                <p class="fragment fade-right"> Prevent public IPs from logging in </p>
-                <p class="fragment fade-right"> TFA</p>
-                <p class="fragment fade-right"> Saml/SSO</p>
-                <p class="fragment fade-right"> Lock down user accounts</p>
-
-                <aside class ="notes">Adam<br>
-                    <ul>
-                        <li> Prevent public IPs from logging in </li>
-                        <li> TFA</li>
-                        <li> Saml/SSO</li>
-                        <li> Lock down user accounts</li>
-                    </ul>
-                </aside>
-            </section>
-
-            <section>
                 <h2> It's not paranoia if they are really out to get you</h2>
                 <p class="fragment fade-right">In case you were wondering: they are.</p>
 
                 <aside class ="notes">Adam<br>
                     <ul>
                         <li> In case you were wondering: they are. </li>
-                    </ul>
-                </aside>
-            </section>
-
-            <section>
-                <h2> Lastly...</h2>
-                <p class="fragment fade-right">You can take all these precautions and still have issues</p>
-                <p class="fragment fade-right">Be prepared for DOS and other attacks</p>
-                <p class="fragment fade-right">Hacking isn't just taking over a device</p>
-                <p class="fragment fade-right">(sometimes bringing down a web server is just as effective as controlling it)</p>
-
-                <aside class ="notes">Adam<br>
-                    <ul>
-                        <li>You can take all these precautions and still have issues</li>
-                        <li>Be prepared for DOS and other attacks</li>
-                        <li>Hacking isn't just taking over a device</li>
-                        <li>(sometimes bringing down a web server is just as effective as controlling it)</li>
                     </ul>
                 </aside>
             </section>
@@ -810,7 +717,7 @@
                 <p class="fragment fade-right">Don't give it a second thought</p>
                 <p class="fragment fade-right">When a sign shows a blue screen of death people notice</p>
 
-                <aside class ="notes"> <br>
+                <aside class ="notes">Mike<br>
                     <p class="fragment fade-right">Something goes wrong on a webpage you reload</p>
                     <p class="fragment fade-right">Don't give it a second thought</p>
                     <p class="fragment fade-right">When a sign shows a blue screen of death people notice</p>
@@ -859,7 +766,7 @@
                     <img  class="wmata-sign" alt="IT Crowd image of tech support with fire" src="img/support.gif" width="40%">
                 </p>
 
-                <aside class ="notes"> <br>
+                <aside class ="notes">Adam<br>
                     <p class="fragment fade-right">Troubleshooting a complex stack with API integrations is hard</p>
                 </aside>
 
@@ -874,7 +781,7 @@
                     <img alt="10 Screens polling" src="img/polling-10.png" width="40%">
                 </p>
 
-                <aside class ="notes"> <br>
+                <aside class ="notes">Adam<br>
                     <p class="fragment fade-right">Devices use Angular to poll various APIs in real time (directly)</p>
                     <p class="fragment fade-right">You didn't load test any of your web servers before launch</p>
                     <p class="fragment fade-right">You add 20 more screens in production</p>
@@ -887,7 +794,7 @@
                 <p class="fragment fade-right">Did a server powering one of the APIs crash?</p>
                 <p class="fragment fade-right">Did the web server crash?</p>
 
-                <aside class ="notes"> <br>
+                <aside class ="notes">Adam<br>
                     <p class="fragment fade-right">How do you troubleshoot?</p>
                     <p class="fragment fade-right">Did a server powering one of the APIs crash?</p>
                     <p class="fragment fade-right">Did the web server crash?</p>
@@ -901,7 +808,7 @@
                 <p class="fragment fade-right">Make sure support knows what those APIs are.</p>
                 <p class="fragment fade-right">Make sure support knows the warnings signs and symptoms of problems.</p>
 
-                <aside class ="notes"> <br>
+                <aside class ="notes">Adam<br>
                     <p class="fragment fade-right">Make sure support knows what those APIs are.</p>
                     <p class="fragment fade-right">Make sure support knows the warnings signs and symptoms of problems.</p>
                 </aside>
@@ -913,7 +820,7 @@
                 <p class="fragment fade-right">Who owns which API</p>
                 <p class="fragment fade-right">Who you gonna call</p>
 
-                <aside class ="notes"> <br>
+                <aside class ="notes">Adam<br>
                     <p class="fragment fade-right">Who owns which API</p>
                     <p class="fragment fade-right">Who you gonna call</p>
                 </aside>
@@ -924,7 +831,7 @@
                 <p class="fragment fade-right">Figure this out before something bad happens</p>
                 <p class="fragment fade-right">(that includes testing before hand)</p>
 
-                <aside class ="notes"> <br>
+                <aside class ="notes">Adam<br>
                     <p class="fragment fade-right">Figure this out before something bad happens</p>
                     <p class="fragment fade-right">(that includes testing before hand)</p>
                 </aside>
@@ -935,7 +842,7 @@
                 <p class="fragment fade-right">Mirror the production hardware</p>
                 <p class="fragment fade-right">Including any dependent APIs</p>
 
-                <aside class ="notes"> <br>
+                <aside class ="notes">Adam<br>
                     <p class="fragment fade-right">Mirror the production hardware</p>
                     <p class="fragment fade-right">Including any dependent APIs</p>
                 </aside>
@@ -949,7 +856,7 @@
                     <img alt="I don't always test. but when I do, I do it in production." src="img/test_in_prod.jpg" width="20%">
                 </p>
 
-                <aside class ="notes"> <br>
+                <aside class ="notes">Adam<br>
                     <p class="fragment fade-right">Your source APIs may not have as robust of a workflow as your main site</p>
                     <p class="fragment fade-right">Make sure the owners of those systems know not to make changes without notifying your dev team</p>
                 </aside>
@@ -963,7 +870,7 @@
                 <p class="fragment fade-right">1: 10k+ devices, mostly static data</p>
                 <p class="fragment fade-right">2: < 5k devices, real-time data</p>
 
-                <aside class ="notes"> <br>
+                <aside class ="notes">Mike<br>
                     <p class="fragment fade-right">1: 10k+ devices, mostly static data</p>
                     <p class="fragment fade-right">2: < 5k devices, real-time data</p>
                 </aside>
@@ -973,7 +880,7 @@
                 <p class="fragment fade-right">Devices: Video Walls, TVs, Tablets, Phones</p>
                 <p class="fragment fade-right">Content: Media for Promotion & Marketing</p>
 
-                <aside class ="notes"> <br>
+                <aside class ="notes">Mike<br>
                     <p class="fragment fade-right">Devices: Video Walls, TVs, Tablets, Phones</p>
                     <p class="fragment fade-right">Content: Media for Promotion & Marketing</p>
                 </aside>
@@ -984,7 +891,7 @@
                 <p class="fragment fade-right">Tens of thousands of devices</p>
                 <p class="fragment fade-right">Significant variance in display sizes</p>
 
-                <aside class ="notes"> <br>
+                <aside class ="notes">Mike<br>
                     <p class="fragment fade-right">Store locations are distributed geographically</p>
                     <p class="fragment fade-right">Tens of thousands of devices</p>
                     <p class="fragment fade-right">Significant variance in display sizes</p>
@@ -997,7 +904,7 @@
                 <p class="fragment fade-right">Google GCM Push Model</p>
                 <p class="fragment fade-right">Offline content playback</p>
 
-                <aside class ="notes"> <br>
+                <aside class ="notes">Mike<br>
                     <p class="fragment fade-right">Drupal manages all content</p>
                     <p class="fragment fade-right">Drupal manages all devices</p>
                     <p class="fragment fade-right">Google GCM Push Model</p>
@@ -1012,7 +919,7 @@
                 <p class="fragment fade-right">System is massively scalable</p>
                 <p class="fragment fade-right">UX for content managers</p>
 
-                <aside class ="notes"> <br>
+                <aside class ="notes">Mike<br>
                     <p class="fragment fade-right">Central place to create content and manage devices</p>
                     <p class="fragment fade-right">Reuse content and/or custom content per device</p>
                     <p class="fragment fade-right">Internet connectivity isn't constantly required</p>
@@ -1025,7 +932,7 @@
                 <p class="fragment fade-right">Devices: Digital Screens</p>
                 <p class="fragment fade-right">Content: Arrival data, messaging / emergency communication</p>
 
-                <aside class ="notes"> <br>
+                <aside class ="notes">Mike<br>
                     <p class="fragment fade-right">Devices: Digital Screens</p>
                     <p class="fragment fade-right">Content: Arrival data, messaging / emergency communication</p>
                 </aside>
@@ -1038,7 +945,7 @@
                 <p class="fragment fade-right">On-demand messaging</p>
                 <p class="fragment fade-right">Performance</p>
 
-                <aside class ="notes"> <br>
+                <aside class ="notes">Mike<br>
                     <p class="fragment fade-right">Real-time data across thousands of devices</p>
                     <p class="fragment fade-right">Internet & websocket connectivity</p>
                     <p class="fragment fade-right">Error handling & recovery</p>
@@ -1054,7 +961,7 @@
                 <p class="fragment fade-right">React front end</p>
                 <p class="fragment fade-right">Inventory of Drupal assets to speed parsing</p>
 
-                <aside class ="notes"> <br>
+                <aside class ="notes">Mike<br>
                     <p class="fragment fade-right">Arrivals (and other) data parsed by Drupal</p>
                     <p class="fragment fade-right">Drupal content for messaging</p>
                     <p class="fragment fade-right">Amazon IOT Websocket Push Model</p>
@@ -1069,7 +976,7 @@
                 <p class="fragment fade-right">System is massively scalable</p>
                 <p class="fragment fade-right">UX for content managers</p>
 
-                <aside class ="notes"> <br>
+                <aside class ="notes">Mike<br>
                     <p class="fragment fade-right">Right sized targeted messaging</p>
                     <p class="fragment fade-right">Arrival data changes on screen within 5-8 seconds</p>
                     <p class="fragment fade-right">System is massively scalable</p>
@@ -1086,7 +993,7 @@
                 <p class="fragment fade-right"> A few techniques to use</p>
                 <p class="fragment fade-right"> A couple of case studies on how we used them</p>
 
-                <aside class ="notes"> <br>
+                <aside class ="notes">Adam<br>
                     <p class="fragment fade-right"> Why Drupal is a good idea for signs!</p>
                     <p class="fragment fade-right"> A few techniques to use</p>
                     <p class="fragment fade-right"> A couple of case studies on how we used them</p>
